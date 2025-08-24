@@ -99,21 +99,61 @@ a img {
 
 /* https://codepen.io/Everybodyknows/pen/abbyLOZ */
 
-div.parallax-image-about {
-  background-image: url('../images/dividers/aboutdivider.jpg');
+@media (max-width: 900px) {
+  div.parallax-image-about {
+    background-image: url('../images/dividers/aboutdivider.small.webp');
+  }
+
+  div.parallax-image-socnet {
+    background-image: url('../images/dividers/socnetdivider.small.webp');
+  }
+
+  div.parallax-image-contact {
+    background-image: url('../images/dividers/contactdivider.small.webp');
+  }
+}
+
+@media (min-width: 901px) {
+  div.parallax-image-about {
+    background-image: url('../images/dividers/aboutdivider.jpg');
+  }
+
+  div.parallax-image-socnet {
+    background-image: url('../images/dividers/socnetdivider.webp');
+  }
+
+  div.parallax-image-contact {
+    background-image: url('../images/dividers/contactdivider.webp');
+  }
+}
+
+div.parallax-image-about { 
   margin-top: -100vh;
   background-position: center top;
 }
 
+div.parallax-image-about.lazy {
+  background-image: none;
+  background-color: #c94c60;
+}
+
 div.parallax-image-socnet {
-  background-image: url('../images/dividers/socnetdivider.jpg');
   margin-top: -5vh;
 }
 
+div.parallax-image-socnet.lazy {
+  background-image: none;
+  background-color: #c94c60;
+}
+
 div.parallax-image-contact {
-  background-image: url('../images/dividers/contactdivider.png');
   margin-top: -5vh;
   background-position: center bottom;
+}
+
+div.parallax-image-contact.lazy {
+  background-image: none;
+  background-color: #c94c60;
 }
 
 .sticky {

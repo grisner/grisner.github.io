@@ -8,7 +8,7 @@ if [ -d ./${prodrepo} ]; then
 	git -C ./grisner.github.io pull
 else
 	git clone git@github-privat:grisner/grisner.github.io.git
-	md $prodrepo/thepanoply-preview/
+	mkdir $prodrepo/thepanoply-preview/
 fi
 
 shopt -s extglob

@@ -24,6 +24,8 @@
         <link href="css/socnet.css" rel="stylesheet" />
         <link href="css/contact.css" rel="stylesheet" />
 
+        <script src="js/lazyloader.js"></script>
+
     </head>
 <body>
 
@@ -65,7 +67,7 @@
     </div>
 
     <!-- About divider -->
-    <div class="parallax-image-about sticky">
+    <div class="parallax-image-about sticky lazy">
     </div>
 
     <div class="section-header" id="OmBandet">
@@ -88,7 +90,7 @@
     <br class="clearLeft" />
 
     <!-- Social network divider -->
-    <div class="parallax-image-socnet sticky">
+    <div class="parallax-image-socnet sticky lazy">
     </div>
 
     <div class="section-header" id="Videor">
@@ -102,7 +104,7 @@
     <!-- Social network section -->
     <div class="section">
             <div id="Youtube-Root" class="socnet">
-                <iframe id="YoutubeIframe" class="socnetiframe" src="https://www.youtube.com/embed/?listType=user_uploads&amp;list=thepanoplysteelband"> 
+                <iframe loading="lazy" id="YoutubeIframe" class="socnetiframe" src="https://www.youtube.com/embed/?listType=user_uploads&amp;list=thepanoplysteelband"> 
                 </iframe>
             </div>
         </div>
@@ -110,7 +112,7 @@
     <br class="clearLeft" />
 
     <!-- Contact divider -->
-    <div class="parallax-image-contact sticky">
+    <div class="parallax-image-contact sticky lazy">
     </div>
 
     <div class="section-header" id="Boka">
@@ -124,7 +126,7 @@
     <!-- Contact section -->
     <div class="section" id="contact">
 
-        <iframe id="GoogleForm" src="https://docs.google.com/forms/d/1NtQk-lAuL8Eh4UjLNLOfAnxoT9NpVxz24FW_iUCtreg/viewform?embedded=true" >
+        <iframe loading="lazy" id="GoogleForm" src="https://docs.google.com/forms/d/1NtQk-lAuL8Eh4UjLNLOfAnxoT9NpVxz24FW_iUCtreg/viewform?embedded=true" >
         </iframe>  
 
     </div>
