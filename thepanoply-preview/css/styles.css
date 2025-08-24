@@ -115,7 +115,7 @@ a img {
 
 @media (min-width: 901px) {
   div.parallax-image-about {
-    background-image: url('../images/dividers/aboutdivider.jpg');
+    background-image: url('../images/dividers/aboutdivider.webp');
   }
 
   div.parallax-image-socnet {
