@@ -23,19 +23,21 @@
         <link href="css/gallery.css" rel="stylesheet" />
         <link href="css/socnet.css" rel="stylesheet" />
         <link href="css/contact.css" rel="stylesheet" />
+        <link href="css/carousel.css" rel="stylesheet" />
 
         <script src="js/lazyloader.js"></script>
+        <!-- <script src="js/carousel.js"></script> -->
 
     </head>
 <body>
 
     <!-- Page header -->
-    <div id="Hem">
+    <div id="AboutSection">
         <div id="NavWrap" class="container">
             <div id="Nav" class="navOnHeader">
                 <p class="nav"><img src="images/the_panoply_header.svg" alt="The Panoply"/></p>
                 <ul>
-                    <li><a id="AboutLink" href="#Hem" class="smoothScroll">om</a></li>
+                    <li><a id="AboutLink" href="#AboutSection" class="smoothScroll">om</a></li>
                     <li><a id="ContactLink" href="#ContactSectionHeader" class="smoothScroll">boka</a></li>
                     <li><a id="SocnetLink" href="#MediaSectionHeader" class="smoothScroll">videor</a></li>
                 </ul>
@@ -77,6 +79,21 @@
 
     <!-- About section -->
     <div class="section">
+
+    <!-- going by https://codepen.io/mihacreanest/pen/QxKVZQ -->
+    <div id="carousel" />
+    <section id="slider">
+        <input type="radio" name="slider" id="s1">
+        <input type="radio" name="slider" id="s2" checked>
+        <input type="radio" name="slider" id="s3">
+        <input type="radio" name="slider" id="s4">
+        <input type="radio" name="slider" id="s5">
+        <label for="s1" id="slide1"><img src="images/dividers/aboutdivider.small.webp" /></label>
+        <label for="s2" id="slide2"><img src="images/dividers/contactdivider.small.webp" /></label>
+        <label for="s3" id="slide3"><img src="images/dividers/socnetdivider.small.webp" /></label>
+        <label for="s4" id="slide4"><img src="images/the_panoply_header.svg" /></label>
+        <label for="s5" id="slide5"><img src="images/carousel/homedivider.jpeg" /></label>
+    </section>
         
         <div class="row introtext">
             <p><b>The Panoply Steelband</b> är en grupp engagerade musiker som spelar oljefat med hemmabas i Södertälje.</p>
@@ -122,11 +139,11 @@
 
     <!-- Media section -->
     <div class="section">
-            <div id="Youtube-Root" class="socnet">
-                <iframe loading="lazy" id="YoutubeIframe" class="socnetiframe" src="https://www.youtube.com/embed/?listType=user_uploads&amp;list=thepanoplysteelband"> 
-                </iframe>
-            </div>
+        <div id="Youtube-Root" class="socnet">
+            <iframe loading="lazy" id="YoutubeIframe" class="socnetiframe" src="https://www.youtube.com/embed/?listType=user_uploads&amp;list=thepanoplysteelband"> 
+            </iframe>
         </div>
+    </div>
 
     <br class="clearLeft" />
 

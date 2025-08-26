@@ -101,7 +101,7 @@ a img {
 
 @media (max-width: 900px) {
   div.parallax-image-about {
-    background-image: url('../images/dividers/homedivider.small.webp');
+    background-image: url('../images/dividers/aboutdivider.small.webp');
   }
 
   div.parallax-image-socnet {
@@ -115,7 +115,7 @@ a img {
 
 @media (min-width: 901px) {
   div.parallax-image-about {
-    background-image: url('../images/dividers/homedivider.webp');
+    background-image: url('../images/dividers/aboutdivider.webp');
   }
 
   div.parallax-image-socnet {
