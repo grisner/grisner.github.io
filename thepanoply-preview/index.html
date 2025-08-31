@@ -26,7 +26,7 @@
         <link href="css/carousel.css" rel="stylesheet" />
 
         <script src="js/lazyloader.js"></script>
-        <!-- <script src="js/carousel.js"></script> -->
+        <script src="js/carousel.js" defer  ></script>
 
     </head>
 <body>
@@ -80,21 +80,26 @@
     <!-- About section -->
     <div class="section">
 
-    <!-- going by https://codepen.io/mihacreanest/pen/QxKVZQ -->
-    <div id="carousel" />
-    <section id="slider">
-        <input type="radio" name="slider" id="s1">
-        <input type="radio" name="slider" id="s2" checked>
-        <input type="radio" name="slider" id="s3">
-        <input type="radio" name="slider" id="s4">
-        <input type="radio" name="slider" id="s5">
-        <label for="s1" id="slide1"><img src="images/dividers/aboutdivider.small.webp" /></label>
-        <label for="s2" id="slide2"><img src="images/dividers/contactdivider.small.webp" /></label>
-        <label for="s3" id="slide3"><img src="images/dividers/socnetdivider.small.webp" /></label>
-        <label for="s4" id="slide4"><img src="images/the_panoply_header.svg" /></label>
-        <label for="s5" id="slide5"><img src="images/carousel/homedivider.jpeg" /></label>
-    </section>
-        
+        <!-- image carousel -->
+        <div class="slider">
+            <input type="button" id="prev" value="<" />
+            <div class="carousel">
+            <div class="item">
+                <img src="images/dividers/aboutDivider.JPG" />
+            </div>
+            <div class="item">
+                <img src="images/dividers/contactdivider.webp" />
+            </div>
+            <div class="item">
+                <img src="images/dividers/socnetdivider.PNG" />
+            </div>
+            <div class="item">
+                <img src="images/carousel/homedivider.jpeg" />
+            </div>
+            </div>
+            <input type="button" id="next" value=">" />
+        </div>
+
         <div class="row introtext">
             <p><b>The Panoply Steelband</b> är en grupp engagerade musiker som spelar oljefat med hemmabas i Södertälje.</p>
             <p>Vår repertoar innehåller de flesta typer av musik.</p>
@@ -151,5 +156,7 @@
     <div class="section" id="fotografer">
         <p>Foton av Per Eliasson, Hasse Asplund, Hans-Olof Östman, m fl</p>
     </div>
+
+
   </body>
 </html>
