@@ -1,28 +1,34 @@
 <html>
-  <head>
-    <link href="css/carousel.css" rel="stylesheet" />
-    <!-- TODO: click to fullscreen -->
+    <head>
+        <link href="css/carousel.css" rel="stylesheet" />
+        <!-- TODO: click to fullscreen -->
+        <!-- https://codeconvey.com/Tutorials/AutoplayCSSSlideshow/ -->
+        <!-- https://medium.com/web-dev-survey-from-kyoto/vanilla-js-carousel-that-is-accessible-swipeable-infinite-scrolling-and-autoplaying-5de5f281ef13 -->
+    </head>
 
-  </head>
-  <body>
-      <div class="slider">
-        <input type="button" id="prev" value="<" />
-        <div class="carousel">
-          <div class="item">
-            <img src="images/dividers/aboutDivider.JPG" />
-          </div>
-          <div class="item">
-            <img src="images/dividers/contactdivider.webp" />
-          </div>
-          <div class="item">
-            <img src="images/dividers/socnetdivider.PNG" />
-          </div>
-          <div class="item">
-            <img src="images/carousel/homedivider.jpeg" />
-          </div>
+    <body>
+        <!-- Autoplay won't start if the viewport height is not large enough to show the entire carousel due to Intersection Observer -->
+        <div class="carousel-wrapper">
+            <div
+                class="carousel"
+                role="group"
+                aria-label="The Panoply image carousel"
+                aria-roledescription="carousel"
+            >
+                <div
+                    id="carousel_navdots"
+                    aria-label="Choose slide to display"
+                    role="group"
+                    class="carousel__navdots home-page"
+                ></div>
+                <div
+                    id="slide_container"
+                    class="carousel__slides"
+                    aria-atomic="false"
+                    aria-live="off"
+                ></div>
+            </div>
         </div>
-        <input type="button" id="next" value=">" />
-      </div>
-    <script src="js/carousel.js"></script>
-  </body>
+        <script src="js/carousel.js"></script>
+    </body>
 </html>

@@ -10,7 +10,7 @@ img {
 }
 
 #Nav {
-    background-color: transparent;    
+    background-color: transparent;
     width: 90%;
     margin: auto;
     text-align: center;
@@ -28,33 +28,31 @@ img {
 }
 
 #Nav li {
-    
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
     float: left;
-    
+
     padding: 10px 10px;
     background-color: transparent;
-    color: #FFF;
+    color: #fff;
     list-style-type: none;
-    text-transform: uppercase;   
-    letter-spacing: 1px; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
     margin: 0 10px 0 0;
     list-style-type: none;
-
 }
 
 #Nav li a {
-    color: black;  
-    text-decoration: none; 
-    line-height: 20px;    
+    color: black;
+    text-decoration: none;
+    line-height: 20px;
 }
 
 #Nav li a:hover {
-   color: white;
+    color: white;
 }
 
 #Nav li a:active {
-  color: #7F4F29;
+    color: #7f4f29;
 }

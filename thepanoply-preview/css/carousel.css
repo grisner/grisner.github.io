@@ -1,61 +1,88 @@
-.slider {
- position: relative;
- margin-top: 10px;
- width: 100%;
- height: 600px;
- overflow: hidden;
- align-items: center;
-}
-.item {
-  overflow: hidden;
-  position: absolute;
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 5px;
-  transition: 0.5s;
-  /* left: calc(50% - 200px); */
-  top: 10px;
-  /* height: 90%; */
-  
-}
-
+/* Show just one 991px wide slide at a time */
 .carousel {
-  display: grid;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  justify-items: center;
+    width: 100%;
+    max-width: 1350px;
+}
+.carousel__slides,
+.carousel__slide {
+    width: 100%;
+}
+/* Make carousel swipeable */
+.carousel__slides {
+    column-gap: 20px;
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+.carousel__slide {
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+}
+.carousel__slides.smooth-scroll {
+    scroll-behavior: smooth;
+}
+/* Hide scrollbar */
+.carousel__slides {
+    scrollbar-width: none; /* Firefox and latest Chromium */
+}
+.carousel__slides::-webkit-scrollbar {
+    display: none; /* Safari and legacy Chromium */
 }
 
-img {
-  display: block;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  
+/* Styling nav dots */
+.carousel {
+    padding-bottom: 60px;
+    position: relative;
+}
+.carousel__navdots {
+    bottom: 0;
+    column-gap: 16px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.carousel__navdots button {
+    /* reset default style */
+    -moz-appearance: none;
+    -webkit-apperance: none;
+    appearance: none;
+    border: 0;
+    cursor: pointer;
+    /* style as a grey dot */
+    background-color: #9a9a9a;
+    border-radius: 50%;
+    height: 10px;
+    padding: 0;
+    width: 10px;
+}
+.carousel__navdots button.is-active {
+    background-color: #0060a8; /* blue */
+}
+.carousel__navdots button:focus-visible {
+    outline: 2px solid #0060a8; /* blue */
+    outline-offset: 2px;
 }
 
-#next {
- position: absolute;
- right: 5px;
- top: 40%;
+/* Stylistic purpose */
+.carousel-wrapper {
+    align-items: center;
+    display: flex;
+    /*height: 100vh;*/
+    /*padding: 0 200px;*/
 }
-#prev {
- position: absolute;
- left: 5px;
- top: 40%;
+.carousel {
+    margin: 0 auto;
 }
-#prev,
-#next {
- background: none;
- border: none;
- font-size: xxx-large;
- font-family: monospace;
- font-weight: bold;
- opacity: 0.5;
- transition: opacity 0.5s;
+/*img {
+    height: auto;
+    max-width: 100%;
 }
-#prev:hover,
-#next:hover {
- opacity: 1;
-}
+body {
+    margin: 50px;
+}*/
+/*p {
+    font-family: Georgia, serif;
+    font-size: 75px;
+}*/
