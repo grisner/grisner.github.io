@@ -9,6 +9,6 @@ The image lists are in js/carousel.js. There is one list for images shown on scr
 
 # TODO
 - [ ] some kind of list of done gigs
-- [ ] image carousel
+- [x] image carousel
 - [x] list merits
 - [x] remove parallax divider images
