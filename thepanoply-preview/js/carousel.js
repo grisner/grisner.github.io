@@ -1,14 +1,14 @@
 // images
 const largeImages = [
-  "/images/carousel/anders.annakarin.webp",
-  "/images/carousel/palssons.webp",
-  "/images/carousel/uppsala.slott.webp",
+  "images/carousel/anders.annakarin.webp",
+  "images/carousel/palssons.webp",
+  "images/carousel/uppsala.slott.webp",
 ];
 
 const smallImages = [
-  "/images/carousel/anders.annakarin.small.webp",
-  "/images/carousel/palssons.small.webp",
-  "/images/carousel/uppsala.slott.small.webp",
+  "images/carousel/anders.annakarin.small.webp",
+  "images/carousel/palssons.small.webp",
+  "images/carousel/uppsala.slott.small.webp",
 ];
 
 // Creating image elements
