@@ -1,20 +1,13 @@
 // images
-const largeImages = [
-  "images/carousel/anders.annakarin.webp",
-  "images/carousel/palssons.webp",
-  "images/carousel/uppsala.slott.webp",
-];
+const imageNames = ["anders.annakarin", "palssons", "uppsala.slott"];
 
-const smallImages = [
-  "images/carousel/anders.annakarin.small.webp",
-  "images/carousel/palssons.small.webp",
-  "images/carousel/uppsala.slott.small.webp",
-];
+const large = imageNames.map((img) => `images/carousel/${img}.webp`);
+const small = imageNames.map((img) => `images/carousel/${img}.small.webp`);
 
 // Creating image elements
 const slideContainer = document.getElementById("slide_container");
 const navDots = document.getElementById("carousel_navdots");
-const images = screen.width > 1000 ? largeImages : smallImages;
+const images = screen.width > 1000 ? large : small;
 
 images.forEach((url, id) => {
   const slide = document.createElement("div");

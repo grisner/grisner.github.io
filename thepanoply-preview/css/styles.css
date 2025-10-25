@@ -1,3 +1,10 @@
+:root {
+    --main-complementary-color: #018bfa;
+    --main-color: #fe7405;
+    --secondary-color: #ffc686;
+    --secondary-complementary-color: #003979;
+}
+
 *,
 *::before,
 *::after {
@@ -29,7 +36,7 @@ div.section {
 div.section-header {
     position: relative;
     width: 100%;
-    height: 40vh;
+    height: 30vh;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
@@ -42,7 +49,7 @@ div.header-text {
     padding-left: calc(20vw - 70px);
     margin-bottom: 40px;
     color: white;
-    background: #fe7405;
+    background: var(--main-color);
 }
 
 div.section:last-child {
@@ -50,9 +57,23 @@ div.section:last-child {
     padding: 3em calc(20vw - 70px) 6em;
 }
 
+iframe {
+    border: 0px;
+}
+
 #fotografer {
     margin: 0;
     font-size: 10px;
+}
+
+section {
+    text-align: center;
+    position: relative;
+    background-color: white;
+    width: 100%;
+    min-height: 0;
+    padding: 3em calc(20vw - 70px);
+    z-index: 1;
 }
 
 /* MENU */
@@ -95,15 +116,11 @@ a img {
 
 /* /SocnetIcons */
 
-/* DIVIDERS */
+/* DIVIDERS-> */
 
 /* https://codepen.io/Everybodyknows/pen/abbyLOZ */
 
 @media (max-width: 900px) {
-    div.parallax-image-about {
-        background-image: url("../images/dividers/homedivider.small.webp");
-    }
-
     div.parallax-image-socnet {
         background-image: url("../images/dividers/socnetdivider.small.webp");
     }
@@ -114,10 +131,6 @@ a img {
 }
 
 @media (min-width: 901px) {
-    div.parallax-image-about {
-        background-image: url("../images/dividers/homedivider.webp");
-    }
-
     div.parallax-image-socnet {
         background-image: url("../images/dividers/socnetdivider.webp");
     }
@@ -127,39 +140,30 @@ a img {
     }
 }
 
-div.parallax-image-about {
-    margin-top: -100vh;
-    background-position: center top;
-}
-
-div.parallax-image-about.lazy {
-    background-image: none;
-    background-color: #c94c60;
-}
-
 div.parallax-image-socnet {
     margin-top: -5vh;
 }
 
 div.parallax-image-socnet.lazy {
     background-image: none;
-    background-color: #c94c60;
+    background-color: var(--main-complementary-color);
 }
 
 div.parallax-image-contact {
     margin-top: -5vh;
-    background-position: center bottom;
+    background-position: center center;
 }
 
 div.parallax-image-contact.lazy {
     background-image: none;
-    background-color: #c94c60;
+    background-color: var(--main-complementary-color);
 }
 
 .sticky {
-    top: 0;
+    top: 15vh;
     width: 100%;
-    height: 100vh;
+    height: 60vh;
+
     position: -webkit-sticky; /* Safari */
     position: sticky;
     -webkit-background-size: cover;
@@ -168,7 +172,7 @@ div.parallax-image-contact.lazy {
     z-index: -1;
 }
 
-/* /DIVIDERS */
+/* ->DIVIDERS */
 
 br.clearLeft {
     clear: left;

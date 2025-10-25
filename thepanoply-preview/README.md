@@ -1,14 +1,13 @@
 # ThePanoply.se
-The web page of The Panoply steelband
+Websidan för The Panoply steelband
 
-As we are a multitude of people, even though few are invested in this page so far I've decided to put the code here, to ease any collaboration.
+Eftersom vi är en grupp människor har vi valt att placera koden här för att underlätta samarbete.
 
-# The carousel images
-The image lists are in js/carousel.js. There is one list for images shown on screens with a width lower than 1000px and one for larger. The properties for the images are around 1:2, not exactly but that doesn't seem to be a problem. I suppose best practise is to take a large image, crop it to around 1:2, save as a webp with a size really smaller than 1MB but I'd like it closer to 500kB. Then scale it to a width of 1000px and make sure it's not more than 100kB in size.
-
+# Karusell-bilderna
+Det finns en lista över bilder i js/carousel.js som behöver uppdateras om bilder läggs till. Sidan laddar de stora bilderna på skärmar som är över 1000px och små för mindre skärmar. Bilderna har proportionen 1:2, inte exakt men det verkar inte vara ett så stort problem. Jag gissar att best practice är att ta en stor bild, klippa till 1:2 och spara som webp. Den måste vara under 1MB men jag föredrar runt 500kB. Skala sen till 1000px och se till att den inte är mer än 100kB stor.
 
 # TODO
-- [ ] some kind of list of done gigs
-- [x] image carousel
-- [x] list merits
-- [x] remove parallax divider images
+- [ ] Någon form av lista över gjorda gig
+- [x] bildkarusell
+- [x] lista meriter
+- [x] Minska parallax-dividers

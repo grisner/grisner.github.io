@@ -39,6 +39,7 @@
         <link href="css/socnet.css" rel="stylesheet" />
         <link href="css/contact.css" rel="stylesheet" />
         <link href="css/carousel.css" rel="stylesheet" />
+        <link href="css/table.css" rel="stylesheet" />
 
         <script src="js/lazyloader.js"></script>
     </head>
@@ -148,18 +149,12 @@
                 ></div>
             </div>
         </div>
+        ;
+        <noscript>
+            <img src="/images/carousel/anders.annakarin.webp" />
+        </noscript>
 
-        <!-- About divider -->
-        <!--<div class="parallax-image-about sticky lazy"></div>
-
-        <div class="section-header" id="AboutSectionHeader">
-            <div class="header-text">
-                <h2>Om oss</h2>
-            </div>
-        </div>-->
-
-        <!-- About section -->
-        <div class="section">
+        <section>
             <div class="row introtext">
                 <p>
                     <b>The Panoply Steelband</b> är en grupp engagerade musiker
@@ -172,7 +167,7 @@
                 </p>
                 <p>Vi erbjuder även prova på-workshops och musikquiz.</p>
             </div>
-        </div>
+        </section>
         <br class="clearLeft" />
 
         <!-- Contact divider -->
@@ -221,6 +216,12 @@
         </div>
 
         <br class="clearLeft" />
+
+        <section id="donegigsection"">
+            <table id="gigs"></table>
+            <script src="js/googlesheet.js"></script>
+            <noscript>If you'd had javascripts running you would have seen a list of all the cool gigs we've done here</noscript>
+        </section>
 
         <!-- Photographers section -->
         <div class="section" id="fotografer">
