@@ -1,8 +1,5 @@
-// Grab the sheet ID from the URL
-const SHEET_ID = "10dt27NU05LcEZJcv1qyzAM1yOFAejA7Fx7QS2BzzyYs";
-
-// Build the CSV export URL
-const csvUrl = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv`;
+// url of the google sheet
+const csvUrl = `https://docs.google.com/spreadsheets/d/10dt27NU05LcEZJcv1qyzAM1yOFAejA7Fx7QS2BzzyYs/export?format=csv`;
 
 // Simple CSV parser (splits on newlines and commas)
 // For more robust parsing, use PapaParse or a similar library
@@ -16,13 +13,11 @@ async function loadSheetAsCsv() {
     .split("\n")
     .map((row) => row.split(","));
   // `rows[0]` now holds the header, `rows[1...]` the data
-  console.log("CSV rows:", rows);
   return rows;
 }
 
 const loadTable = async () => {
   const rows = await loadSheetAsCsv().catch(console.error);
-  console.log({ headerrow: rows[0] });
 
   const table = document.getElementById("gigs");
 
@@ -43,7 +38,7 @@ const loadTable = async () => {
   });
   table.appendChild(headerRow);
 
-  // rows
+  // data rows
   for (let i = 1; i < rows.length; i++) {
     const tableRow = document.createElement("tr");
     let columnHeader = "";
@@ -52,7 +47,6 @@ const loadTable = async () => {
       tableRow.setAttribute("class", "secondTr");
     }
 
-    // console.log({ row: rows[i] });
     const columns = [];
     rows[i].forEach((c, j) => {
       let result =
@@ -62,11 +56,9 @@ const loadTable = async () => {
       result = result && result.replaceAll('"', "");
       result && columns.push(result);
     });
-    console.log(columns);
 
     for (let j = 0; j < columns.length; j++) {
       // Create column values
-
       const columnElm = document.createElement("td");
       if (j === 0) {
         columnElm.setAttribute("class", "firstColumn");
@@ -79,7 +71,6 @@ const loadTable = async () => {
       const column = columns[j];
 
       if (column[column.length - 1] === '"') {
-        // End of place
         columnHeader = `${columnHeader}${column.replace('"', "")}`;
         columnElm.innerText = columnHeader;
         tableRow.appendChild(columnElm);
