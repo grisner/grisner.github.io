@@ -1,0 +1,56 @@
+@media (max-width: 900px) {
+  div.parallax-image-socnet {
+    background-image: url("../images/dividers/socnetdivider.small.webp");
+  }
+
+  div.parallax-image-contact {
+    background-image: url("../images/dividers/contactdivider.small.webp");
+  }
+
+  div.parallax-image-gigs {
+    background-image: url("../images/dividers/teatersal.small.webp");
+  }
+}
+
+@media (min-width: 901px) {
+  div.parallax-image-socnet {
+    background-image: url("../images/dividers/socnetdivider.webp");
+  }
+
+  div.parallax-image-contact {
+    background-image: url("../images/dividers/contactdivider.webp");
+  }
+
+  div.parallax-image-gigs {
+    background-image: url("../images/dividers/teatersal.webp");
+  }
+}
+
+div.parallax-image-socnet {
+  margin-top: -5vh;
+}
+
+div.parallax-image-socnet.lazy {
+  background-image: none;
+  background-color: var(--main-complementary-color);
+}
+
+div.parallax-image-contact {
+  margin-top: -5vh;
+  background-position: center bottom;
+}
+
+div.parallax-image-contact.lazy {
+  background-image: none;
+  background-color: var(--main-complementary-color);
+}
+
+div.parallax-image-gigs {
+  margin-top: -5vh;
+  background-position: center bottom;
+
+  .lazy {
+    background-image: none;
+    background-color: var(--main-complementary-color);
+  }
+}

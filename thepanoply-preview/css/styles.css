@@ -1,79 +1,85 @@
 :root {
-    --main-complementary-color: #018bfa;
-    --main-color: #fe7405;
-    --secondary-color: #ffc686;
-    --secondary-complementary-color: #003979;
+  --main-complementary-color: #018bfa;
+  --main-color: #f79420;
+  --secondary-color: #ffc686;
+  --secondary-complementary-color: #003979;
+}
+
+@font-face {
+  font-family: "PottaOne";
+  src: url("/fonts/pottaone-regular.ttf");
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    min-height: 300%;
-    width: 100%;
-    font-family: sans-serif, Arial, Helvetica, Montserrat, "Helvetica Neue";
-    margin: 0;
-    padding: 0;
-    position: relative;
-    z-index: 0;
-    scroll-behavior: smooth;
+  min-height: 300%;
+  width: 100%;
+  font-family: sans-serif, Arial, Helvetica, Montserrat, "Helvetica Neue";
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 0;
+  scroll-behavior: smooth;
 }
 
 div.section {
-    position: relative;
-    background-color: white;
-    width: 100%;
-    min-height: 0;
-    padding: 3em calc(20vw - 70px);
-    z-index: 1;
-    text-align: center;
+  position: relative;
+  background-color: white;
+  width: 100%;
+  min-height: 0;
+  padding: 3em calc(20vw - 70px);
+  z-index: 1;
+  text-align: center;
 }
 
-div.section-header {
-    position: relative;
-    width: 100%;
-    height: 40vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    z-index: 2;
+.section-header {
+  position: relative;
+  width: 100%;
+  height: 1vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  z-index: 2;
 }
 
-div.header-text {
-    height: auto;
-    padding: 0px 20px;
-    padding-left: calc(20vw - 70px);
-    margin-bottom: 40px;
-    color: white;
-    background: var(--main-color);
+.header-text {
+  height: auto;
+  padding: 0px 20px;
+  /*padding-left: calc(20vw - 70px);*/
+
+  margin-bottom: 40px;
+  color: white;
+  background: var(--main-color);
 }
 
 div.section:last-child {
-    min-height: 100%;
-    padding: 3em calc(20vw - 70px) 6em;
+  min-height: 100%;
+  padding: 3em calc(20vw - 70px) 6em;
 }
 
 iframe {
-    border: 0px;
+  border: 0px;
 }
 
 #fotografer {
-    margin: 0;
-    font-size: 10px;
+  margin: 0;
+  font-size: 10px;
 }
 
 section {
-    text-align: center;
-    position: relative;
-    background-color: white;
-    width: 100%;
-    min-height: 0;
-    padding: 3em calc(20vw - 70px);
-    z-index: 1;
+  text-align: center;
+  position: relative;
+  background-color: white;
+  width: 100%;
+  min-height: 0;
+  padding: 3em calc(20vw - 70px);
+  z-index: 1;
 }
 
 /* MENU */
@@ -83,35 +89,35 @@ section {
 /* SocnetIcons */
 
 #SocnetIcons {
-    padding: 5px 5px 0px 5px;
-    z-index: 2;
+  padding: 5px 5px 0px 5px;
+  z-index: 2;
 }
 
 a img {
-    display: inline;
-    margin: auto;
-    width: 38px;
-    height: 38px;
-    border: 0;
-    padding: 5px;
+  display: inline;
+  margin: auto;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  padding: 5px;
 }
 
 .socneticons {
-    display: flex;
-    padding-left: calc(40vw - 100px);
-    padding-right: calc(40vw - 100px);
+  display: flex;
+  padding-left: calc(40vw - 100px);
+  padding-right: calc(40vw - 100px);
 }
 
 .socneticon {
-    text-align: center;
-    align-content: center;
-    display: inline-block;
-    margin: auto;
+  text-align: center;
+  align-content: center;
+  display: inline-block;
+  margin: auto;
 }
 
 #SocnetIcons {
-    margin: auto;
-    align-content: center;
+  margin: auto;
+  align-content: center;
 }
 
 /* /SocnetIcons */
@@ -121,59 +127,37 @@ a img {
 /* https://codepen.io/Everybodyknows/pen/abbyLOZ */
 
 @media (max-width: 900px) {
-    div.parallax-image-socnet {
-        background-image: url("../images/dividers/socnetdivider.small.webp");
-    }
-
-    div.parallax-image-contact {
-        background-image: url("../images/dividers/contactdivider.small.webp");
-    }
+  .header-text {
+    margin-left: 10vw;
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 901px) {
-    div.parallax-image-socnet {
-        background-image: url("../images/dividers/socnetdivider.webp");
-    }
-
-    div.parallax-image-contact {
-        background-image: url("../images/dividers/contactdivider.webp");
-    }
+  .header-text {
+    margin-left: 20vw;
+    font-size: 3rem;
+  }
 }
 
-div.parallax-image-socnet {
-    margin-top: -5vh;
-}
-
-div.parallax-image-socnet.lazy {
-    background-image: none;
-    background-color: var(--main-complementary-color);
-}
-
-div.parallax-image-contact {
-    margin-top: -5vh;
-    background-position: center bottom;
-}
-
-div.parallax-image-contact.lazy {
-    background-image: none;
-    background-color: var(--main-complementary-color);
+.fixed {
+  top: 15vh;
+  width: 100%;
+  height: 30vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  z-index: -1;
+  background-attachment: fixed;
 }
 
 .sticky {
-    top: 15vh;
-    width: 100%;
-    height: 100vh;
-
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    z-index: -1;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
 }
 
 /* ->DIVIDERS */
 
 br.clearLeft {
-    clear: left;
+  clear: left;
 }
