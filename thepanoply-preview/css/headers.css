@@ -1,11 +1,4 @@
-#Hem {
-  position: relative;
-  height: 166px;
-  z-index: 10;
-}
-
 h1 {
-  /*font-family: sans-serif, Arial, Helvetica, Montserrat, "Helvetica Neue";*/
   font-family: "PottaOne";
   font-weight: 700;
   color: black;

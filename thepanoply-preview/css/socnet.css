@@ -1,13 +1,25 @@
 .socnet {
-    float: none;
-    margin: auto;
+  float: none;
+  margin: auto;
 }
 
 .socnetiframe {
-    width: 100%;
-    height: 40vh;
+  width: 100%;
+  height: 40vh;
 }
 
 #Youtube-Root {
-    text-align: center;
+  text-align: center;
+}
+
+.socneticons {
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+}
+
+#SocnetIcons {
+  img {
+    height: 38px;
+  }
 }

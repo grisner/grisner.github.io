@@ -3,11 +3,14 @@
   --main-color: #f79420;
   --secondary-color: #ffc686;
   --secondary-complementary-color: #003979;
+
+  --large-size: 901px;
+  --small-size: 900px;
 }
 
 @font-face {
   font-family: "PottaOne";
-  src: url("/thepanoply-preview/fonts/pottaone-regular.ttf");
+  src: url("/fonts/pottaone-regular.woff2");
 }
 
 *,
@@ -51,7 +54,6 @@ div.section {
 .header-text {
   height: auto;
   padding: 0px 20px;
-  /*padding-left: calc(20vw - 70px);*/
 
   margin-bottom: 40px;
   color: white;
@@ -82,12 +84,7 @@ section {
   z-index: 1;
 }
 
-/* MENU */
-
-/* /MENU */
-
 /* SocnetIcons */
-
 #SocnetIcons {
   padding: 5px 5px 0px 5px;
   z-index: 2;
@@ -123,7 +120,6 @@ a img {
 /* /SocnetIcons */
 
 /* DIVIDERS-> */
-
 /* https://codepen.io/Everybodyknows/pen/abbyLOZ */
 
 @media (max-width: 900px) {
