@@ -27,35 +27,41 @@
       content="https://thepanoply.se/images/the_panoply.png"
     />
 
+    <style>
+      :root {
+        --main-complementary-color: #018bfa;
+        --main-color: #f79420;
+        --secondary-color: #ffc686;
+        --secondary-complementary-color: #003979;
+
+        --large-size: 901px;
+        --small-size: 900px;
+      }
+    </style>
+
     <!-- stylesheets -->
     <link href="css/menu.css" rel="stylesheet" />
-    <!-- <link href="css/headers.css" rel="stylesheet" /> -->
+    <link href="css/socnet.css" rel="stylesheet" />
   </head>
 
   <body>
     <!-- Page header -->
-    <header id="Hem">
-      <img id="banner" src="images/banner.svg" alt="The Panoply" />
-      <ul id="Nav">
-        <li>
-          <a id="AboutLink" href="#Hem" class="smoothScroll">om</a>
-        </li>
-        <li>
-          <a id="ContactLink" href="#ContactSectionHeader" class="smoothScroll">
-            boka
-          </a>
-        </li>
-        <li>
-          <a id="SocnetLink" href="#MediaSectionHeader" class="smoothScroll"
-            >videor</a
-          >
-        </li>
-        <li>
-          <a id="GigLink" href="#DoneGigsSectionHeader" class="smoothScroll"
-            >spelningar</a
-          >
-        </li>
-      </ul>
+    <div id="Hem">
+      <img id="banner-image" src="images/banner.svg" alt="The Panoply" />
+    </div>
+    <header id="Menu">
+      <nav id="Nav">
+        <a id="AboutLink" href="#Hem" class="smoothScroll">om</a>
+        <a id="ContactLink" href="#ContactSectionHeader" class="smoothScroll">
+          boka
+        </a>
+        <a id="SocnetLink" href="#MediaSectionHeader" class="smoothScroll">
+          videor
+        </a>
+        <a id="GigLink" href="#DoneGigsSectionHeader" class="smoothScroll">
+          spelningar
+        </a>
+      </nav>
     </header>
 
     <!-- Social network icons section -->

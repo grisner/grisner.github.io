@@ -1,15 +1,19 @@
 table {
-    width: 100%;
+  width: 100%;
+}
+
+tr {
+  height: 3rem;
 }
 
 .firstColumn {
-    text-align: left;
+  text-align: left;
 }
 
 .lastColumn {
-    text-align: right;
+  text-align: right;
 }
 
 .secondTr {
-    background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
