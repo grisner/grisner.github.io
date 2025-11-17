@@ -18,6 +18,7 @@ images.forEach((url, id) => {
   const slide = document.createElement("div");
   slide.setAttribute("class", "carousel__slide");
   slide.setAttribute("role", "group");
+  slide.setAttribute("alt", imageNames[id]);
   slide.setAttribute("aria-label", `${id} of ${images.length}`);
   slide.setAttribute("aria-roledescription", "slide");
 
