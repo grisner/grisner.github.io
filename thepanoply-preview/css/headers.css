@@ -9,3 +9,9 @@ h2 {
   margin: 10px 20px;
   font-family: "PottaOne";
 }
+
+@media (max-width: 900px) {
+  h2 {
+    font-size: 32px;
+  }
+}

@@ -5,6 +5,7 @@
 
 .socnetiframe {
   width: 80%;
+  max-width: calc(var(--max-width) * 0.8);
   height: 40vh;
 }
 

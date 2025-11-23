@@ -6,14 +6,15 @@ table {
 
 tr {
   height: 3rem;
-}
-
-.firstColumn {
   text-align: left;
 }
 
+.firstColumn {
+  /*text-align: left;*/
+}
+
 .lastColumn {
-  text-align: right;
+  /*text-align: right;*/
 }
 
 .secondTr {
