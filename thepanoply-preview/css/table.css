@@ -9,13 +9,13 @@ tr {
   text-align: left;
 }
 
-.firstColumn {
-  /*text-align: left;*/
+/*.firstColumn {
+  text-align: left;
 }
 
 .lastColumn {
-  /*text-align: right;*/
-}
+  text-align: left;
+}*/
 
 .secondTr {
   background-color: var(--secondary-color);
