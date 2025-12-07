@@ -6,7 +6,7 @@ const imageNames = [
   "nilssons",
 ];
 
-const large = imageNames.map((img) => `images/carousel/${img}.thin.webp`);
+const large = imageNames.map((img) => `images/carousel/${img}.webp`);
 const small = imageNames.map((img) => `images/carousel/${img}.small.webp`);
 
 // Creating image elements
@@ -18,7 +18,6 @@ images.forEach((url, id) => {
   const slide = document.createElement("div");
   slide.setAttribute("class", "carousel__slide");
   slide.setAttribute("role", "group");
-  slide.setAttribute("alt", imageNames[id]);
   slide.setAttribute("aria-label", `${id} of ${images.length}`);
   slide.setAttribute("aria-roledescription", "slide");
 
