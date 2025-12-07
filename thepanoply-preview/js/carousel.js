@@ -11,7 +11,7 @@ const small = imageNames.map((img) => `images/carousel/${img}.small.webp`);
 
 // Creating image elements
 const slideContainer = document.getElementById("slide_container");
-const navDots = document.getElementById("hem");
+const navDots = document.getElementById("carousel_navdots");
 const images = screen.width > 1000 ? large : small;
 
 images.forEach((url, id) => {

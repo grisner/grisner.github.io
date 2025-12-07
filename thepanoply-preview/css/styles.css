@@ -69,10 +69,9 @@ iframe {
   border: 0px;
 }
 
-footer {
+#fotografer {
   margin: 0;
   font-size: 10px;
-  text-align: center;
 }
 
 section {
@@ -84,6 +83,41 @@ section {
   padding: 3em calc(20vw - 70px);
   z-index: 1;
 }
+
+/* SocnetIcons */
+#SocnetIcons {
+  padding: 5px 5px 0px 5px;
+  z-index: 2;
+}
+
+a img {
+  display: inline;
+  margin: auto;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  padding: 5px;
+}
+
+.socneticons {
+  display: flex;
+  padding-left: calc(40vw - 100px);
+  padding-right: calc(40vw - 100px);
+}
+
+.socneticon {
+  text-align: center;
+  align-content: center;
+  display: inline-block;
+  margin: auto;
+}
+
+#SocnetIcons {
+  margin: auto;
+  align-content: center;
+}
+
+/* /SocnetIcons */
 
 /* DIVIDERS-> */
 /* https://codepen.io/Everybodyknows/pen/abbyLOZ */

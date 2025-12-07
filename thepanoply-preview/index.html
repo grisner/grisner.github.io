@@ -41,24 +41,29 @@
     <script src="js/lazyloader.js"></script>
   </head>
   <body>
-    <div id="top"></div>
     <!-- Page header -->
-    <div id="banner">
-      <img id="banner-image" src="images/banner.svg" alt="The Panoply" />
-    </div>
-    <header id="Menu">
-      <nav id="Nav">
-        <a id="AboutLink" href="#hem" class="smoothScroll">om</a>
-        <a id="ContactLink" href="#ContactSectionHeader" class="smoothScroll">
-          boka
-        </a>
-        <a id="SocnetLink" href="#MediaSectionHeader" class="smoothScroll">
-          videor
-        </a>
-        <a id="GigLink" href="#DoneGigsSectionHeader" class="smoothScroll">
-          spelningar
-        </a>
-      </nav>
+    <header id="Hem">
+      <img id="banner" src="images/banner.svg" alt="The Panoply" />
+      <ul id="Nav">
+        <li>
+          <a id="AboutLink" href="#Hem" class="smoothScroll">om</a>
+        </li>
+        <li>
+          <a id="ContactLink" href="#ContactSectionHeader" class="smoothScroll">
+            boka
+          </a>
+        </li>
+        <li>
+          <a id="SocnetLink" href="#MediaSectionHeader" class="smoothScroll"
+            >videor</a
+          >
+        </li>
+        <li>
+          <a id="GigLink" href="#DoneGigsSectionHeader" class="smoothScroll"
+            >spelningar</a
+          >
+        </li>
+      </ul>
     </header>
 
     <!-- Social network icons section -->
@@ -114,7 +119,7 @@
         aria-roledescription="carousel"
       >
         <div
-          id="hem"
+          id="carousel_navdots"
           aria-label="Choose slide to display"
           role="group"
           class="carousel__navdots home-page"
@@ -132,7 +137,7 @@
       <img src="/images/carousel/anders.annakarin.webp" />
     </noscript>
 
-    <section id="intro">
+    <section>
       <div class="row introtext">
         <p>
           <b>The Panoply Steelband</b> är en grupp engagerade musiker som spelar
@@ -216,9 +221,9 @@
     </section>
 
     <!-- Photographers section -->
-    <footer id="fotografer">
+    <div class="section" id="fotografer">
       <p>Foton av Per Eliasson, Hasse Asplund, Hans-Olof Östman, m fl</p>
-    </footer>
+    </div>
     <script src="js/carousel.js"></script>
   </body>
 </html>
