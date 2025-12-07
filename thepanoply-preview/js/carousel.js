@@ -6,13 +6,12 @@ const imageNames = [
   "nilssons",
 ];
 
-const baseUrl = "http://localhost:8080/";
 const large = imageNames.map((img) => `images/carousel/${img}.thin.webp`);
 const small = imageNames.map((img) => `images/carousel/${img}.small.webp`);
 
 // Creating image elements
 const slideContainer = document.getElementById("slide_container");
-const navDots = document.getElementById("NavDots");
+const navDots = document.getElementById("hem");
 const images = screen.width > 1000 ? large : small;
 
 images.forEach((url, id) => {
