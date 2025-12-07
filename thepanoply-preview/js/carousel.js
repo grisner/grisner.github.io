@@ -6,6 +6,7 @@ const imageNames = [
   "nilssons",
 ];
 
+const baseUrl = "http://localhost:8080/";
 const large = imageNames.map((img) => `images/carousel/${img}.thin.webp`);
 const small = imageNames.map((img) => `images/carousel/${img}.small.webp`);
 

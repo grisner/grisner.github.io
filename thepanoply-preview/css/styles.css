@@ -4,17 +4,16 @@
   --secondary-color: #ffc686;
   --secondary-complementary-color: #003979;
 
-  --large-width: 901px;
-  --medium-width: 900px;
-  --small-width: 500px;
+  --large-size: 901px;
+  --small-size: 900px;
 
   --max-width: 1100px;
 }
 
 @font-face {
   font-family: "PottaOne";
-  src: url("/thepanoply-preview/fonts/pottaone-regular.woff2");
-  /*src: url("/fonts/pottaone-regular.woff2");*/
+  /*src: url("/thepanoply-preview/fonts/pottaone-regular.woff2");*/
+  src: url("/fonts/pottaone-regular.woff2");
 }
 
 *,
@@ -85,14 +84,14 @@ section {
   background-color: white;
   width: 100%;
   min-height: 0;
-  padding-bottom: 10px;
+
   z-index: 1;
 }
 
 /* DIVIDERS-> */
 /* https://codepen.io/Everybodyknows/pen/abbyLOZ */
 
-@media (min-width: 500px) and (max-width: 900px) {
+@media (max-width: 900px) {
   .header-text {
     margin-left: 10vw;
     font-size: 2rem;
@@ -120,18 +119,6 @@ section {
 .sticky {
   position: -webkit-sticky; /* Safari */
   position: sticky;
-}
-
-h2 {
-  margin: 10px 20px;
-  font-family: "PottaOne";
-  /*font-size: 3em*/
-}
-
-@media (max-width: 500px) {
-  h2 {
-    font-size: 1.5em;
-  }
 }
 
 /* ->DIVIDERS */
