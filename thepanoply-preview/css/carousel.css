@@ -1,7 +1,7 @@
 /* Show just one 991px wide slide at a time */
 .carousel {
   width: 100%;
-  max-width: var(--max-width);
+  max-width: 1350px;
 }
 .carousel__slides,
 .carousel__slide {
@@ -31,7 +31,7 @@
 
 /* Styling nav dots */
 .carousel {
-  padding-bottom: 30px;
+  padding-bottom: 60px;
   position: relative;
 }
 .carousel__navdots {
