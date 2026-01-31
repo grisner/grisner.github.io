@@ -1,10 +1,5 @@
 // images
-const imageNames = [
-  "anders.annakarin",
-  "palssons",
-  "uppsala.slott",
-  "nilssons",
-];
+const imageNames = ["anders.annakarin", "palssons", "uppsala.slott"];
 
 const large = imageNames.map((img) => `images/carousel/${img}.webp`);
 const small = imageNames.map((img) => `images/carousel/${img}.small.webp`);
