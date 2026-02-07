@@ -29,9 +29,9 @@ img {
 
 @media (max-width: 400px) {
   #Nav li {
-    font-weight: 600;
+    font-weight: 400;
     font-size: 12px;
-    /*font-family: "PottaOne";*/
+    font-family: "PottaOne";
   }
 }
 
@@ -43,7 +43,7 @@ img {
   }
 }
 
-@media (min-width: 901px) {
+@media (min-width: 451px) {
   #Nav li {
     font-weight: 400;
     font-size: 14px;
