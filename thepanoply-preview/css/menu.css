@@ -31,7 +31,6 @@ img {
   #Nav li {
     font-weight: 400;
     font-size: 12px;
-    font-family: "PottaOne";
   }
 }
 
@@ -39,7 +38,6 @@ img {
   #Nav li {
     font-weight: 400;
     font-size: 12px;
-    font-family: "PottaOne";
   }
 }
 
@@ -47,11 +45,11 @@ img {
   #Nav li {
     font-weight: 400;
     font-size: 14px;
-    font-family: "PottaOne";
   }
 }
 
 #Nav li {
+  font-family: "PottaOne";
   line-height: 20px;
   float: left;
 

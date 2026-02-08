@@ -3,14 +3,13 @@
   --main-color: #fe7405;
   --secondary-color: #ffc686;
   --secondary-complementary-color: #003979;
-  --small-screen-max: 400;
-  --medium-screen-max: 900px;
 }
 
 @font-face {
   font-family: "PottaOne";
   src: url("/thepanoply-preview/fonts/pottaone-regular.woff2");
-  /*src: url("/fonts/pottaone-regular.woff2");*/
+  /* line above used for preview deployment, line below used for prod deployment  */
+  /* src: url("/fonts/pottaone-regular.woff2"); */
 }
 
 *,
@@ -128,7 +127,7 @@ a img {
 
 /* https://codepen.io/Everybodyknows/pen/abbyLOZ */
 
-@media (max-width: var(--medium-screen-max)) {
+@media (max-width: 900px) {
   div.parallax-image-socnet {
     background-image: url("../images/dividers/socnetdivider.small.webp");
   }
@@ -138,7 +137,7 @@ a img {
   }
 }
 
-@media (min-width: calc(var(--medium-screen-max) + 1px)) {
+@media (min-width: 901px) {
   div.parallax-image-socnet {
     background-image: url("../images/dividers/socnetdivider.webp");
   }

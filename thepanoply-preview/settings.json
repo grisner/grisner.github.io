@@ -1,0 +1,5 @@
+{
+  "ollama.baseUrl": "http://localhost:11434",
+  "ollama.model": "mistral",
+  "ollama.enabled": true
+}
