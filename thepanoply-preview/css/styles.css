@@ -3,6 +3,8 @@
   --main-color: #fe7405;
   --secondary-color: #ffc686;
   --secondary-complementary-color: #003979;
+
+  --max-width: 1350px;
 }
 
 @font-face {

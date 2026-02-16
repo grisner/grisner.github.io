@@ -1,18 +1,18 @@
 /* Show just one 991px wide slide at a time */
 .carousel {
-    width: 100%;
-    max-width: 1350px;
+  width: 100%;
+  max-width: var(--max-width);
 }
 .carousel__slides,
 .carousel__slide {
-    width: 100%;
+  width: 100%;
 }
 /* Make carousel swipeable */
 .carousel__slides {
-    column-gap: 20px;
-    display: flex;
-    overflow: auto;
-    scroll-snap-type: x mandatory;
+  column-gap: 20px;
+  display: flex;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
 }
 .carousel__slide {
     flex: 0 0 auto;
@@ -31,7 +31,7 @@
 
 /* Styling nav dots */
 .carousel {
-    padding-bottom: 60px;
+    padding-bottom: 30px;
     position: relative;
 }
 .carousel__navdots {

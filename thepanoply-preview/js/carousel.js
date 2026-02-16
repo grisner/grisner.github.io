@@ -1,18 +1,37 @@
 // images
-const imageNames = ["anders.annakarin", "palssons", "uppsala.slott"];
+const imageNames = [
+  "anders.annakarin",
+  "palssons",
+  "uppsala.slott",
+  "nilssons",
+];
 
-const large = imageNames.map((img) => `images/carousel/${img}.webp`);
-const small = imageNames.map((img) => `images/carousel/${img}.small.webp`);
+const extension = (checkWebPSupport() && "webp") || "jpg";
+const large = imageNames.map((img) => `images/carousel/${img}.${extension}`);
+const small = imageNames.map(
+  (img) => `images/carousel/${img}.small.${extension}`,
+);
 
 // Creating image elements
 const slideContainer = document.getElementById("slide_container");
 const navDots = document.getElementById("carousel_navdots");
 const images = screen.width > 1000 ? large : small;
 
+function checkWebPSupport() {                                                                                                                                                                   
+  const canvas = document.createElement("canvas");
+  if (canvas.getContext && canvas.getContext("2d")) {
+    const isSupported =
+      canvas.toDataURL("image/webp").indexOf("data:image/webp") === 0;
+    return isSupported;
+  }
+  return false; // Fallback for very old browsers
+}
+
 images.forEach((url, id) => {
   const slide = document.createElement("div");
   slide.setAttribute("class", "carousel__slide");
   slide.setAttribute("role", "group");
+  slide.setAttribute("alt", imageNames[id]);
   slide.setAttribute("aria-label", `${id} of ${images.length}`);
   slide.setAttribute("aria-roledescription", "slide");
 
