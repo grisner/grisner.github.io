@@ -3,10 +3,12 @@
   width: 100%;
   max-width: var(--max-width);
 }
+
 .carousel__slides,
 .carousel__slide {
   width: 100%;
 }
+
 /* Make carousel swipeable */
 .carousel__slides {
   column-gap: 20px;
@@ -14,67 +16,81 @@
   overflow: auto;
   scroll-snap-type: x mandatory;
 }
+
 .carousel__slide {
-    flex: 0 0 auto;
-    scroll-snap-align: center;
+  flex: 0 0 auto;
+  scroll-snap-align: center;
 }
+
 .carousel__slides.smooth-scroll {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
+
 /* Hide scrollbar */
 .carousel__slides {
-    scrollbar-width: none; /* Firefox and latest Chromium */
+  scrollbar-width: none;
+  /* Firefox and latest Chromium */
 }
+
 .carousel__slides::-webkit-scrollbar {
-    display: none; /* Safari and legacy Chromium */
+  display: none;
+  /* Safari and legacy Chromium */
 }
 
 /* Styling nav dots */
 .carousel {
-    padding-bottom: 30px;
-    position: relative;
+  padding-bottom: 30px;
+  position: relative;
 }
+
 .carousel__navdots {
-    bottom: 0;
-    column-gap: 16px;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    left: 0;
-    right: 0;
+  bottom: 0;
+  column-gap: 16px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
+
 .carousel__navdots button {
-    /* reset default style */
-    -moz-appearance: none;
-    -webkit-apperance: none;
-    appearance: none;
-    border: 0;
-    cursor: pointer;
-    /* style as a grey dot */
-    background-color: #9a9a9a;
-    border-radius: 50%;
-    height: 10px;
-    padding: 0;
-    width: 10px;
+  /* reset default style */
+  -moz-appearance: none;
+  -webkit-apperance: none;
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  /* style as a grey dot */
+  background-color: #9a9a9a;
+  border-radius: 50%;
+  height: 10px;
+  padding: 0;
+  width: 10px;
 }
+
 .carousel__navdots button.is-active {
-    background-color: #0060a8; /* blue */
+  background-color: #0060a8;
+  /* blue */
 }
+
 .carousel__navdots button:focus-visible {
-    outline: 2px solid #0060a8; /* blue */
-    outline-offset: 2px;
+  outline: 2px solid #0060a8;
+  /* blue */
+  outline-offset: 2px;
 }
 
 /* Stylistic purpose */
 .carousel-wrapper {
-    align-items: center;
-    display: flex;
-    /*height: 100vh;*/
-    /*padding: 0 200px;*/
+  align-items: center;
+  display: flex;
+  /*height: 100vh;*/
+  /*padding: 0 200px;*/
 }
+
 .carousel {
-    margin: 0 auto;
+  margin: 0 auto;
 }
+
 /*img {
     height: auto;
     max-width: 100%;

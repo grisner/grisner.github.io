@@ -1,13 +1,13 @@
 #Hem {
-    position: relative;
-    height: 166px;
-    z-index: 10;
+  position: relative;
+  height: 166px;
+  z-index: 10;
 }
 
 h1 {
-    font-family: sans-serif, Arial, Helvetica, Montserrat, "Helvetica Neue";
-    font-weight: 700;
-    color: black;
+  font-family: sans-serif, Arial, Helvetica, Montserrat, "Helvetica Neue";
+  font-weight: 700;
+  color: black;
 }
 
 h2 {
@@ -16,5 +16,5 @@ h2 {
 }
 
 p.nav {
-    min-height: 73px;
+  min-height: 73px;
 }
