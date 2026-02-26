@@ -9,9 +9,9 @@
 
 @font-face {
   font-family: "PottaOne";
-  src: url("/thepanoply-preview/fonts/pottaone-regular.woff2");
+  /*src: url("/thepanoply-preview/fonts/pottaone-regular.woff2");*/
   /* line above used for preview deployment, line below used for prod deployment  */
-  /* src: url("/fonts/pottaone-regular.woff2"); */
+  src: url("/fonts/pottaone-regular.woff2");
 }
 
 *,
@@ -74,6 +74,11 @@ footer {
   margin: 0;
   font-size: 10px;
   text-align: center;
+  background-color: white;
+
+  p {
+    margin-top: 0;
+  }
 }
 
 section {
@@ -180,7 +185,8 @@ div.parallax-image-contact.lazy {
   background-color: var(--main-complementary-color);
 }
 
-.sticky {
+.fixed3 {
+
   top: 15vh;
   width: 100%;
   height: 100vh;
@@ -199,16 +205,34 @@ div.parallax-image-contact.lazy {
   font-size: 3rem;
 }
 
-
 .fixed {
   top: 15vh;
   width: 100%;
-  height: 30vh;
+  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   z-index: -1;
-  background-attachment: fixed;
+}
+
+
+/* IOS Safari doesn't support fixed, see https://bugs.webkit.org/show_bug.cgi?id=275247 */
+/* This is IOS Safari */
+@supports (-webkit-touch-callout: none) {  
+  .fixed {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    height: 60vh;
+  }
+}
+
+/* This is other */
+@supports not (-webkit-touch-callout: none) {
+  .fixed:not(.ios-safari) {
+    height: 30vh;
+    background-attachment: fixed;
+  }
+
 }
 
 /* ->DIVIDERS */
