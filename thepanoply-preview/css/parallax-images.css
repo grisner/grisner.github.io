@@ -15,9 +15,9 @@
   }
 
   div.parallax-image-gigs {
-    background-image: url("../images/dividers/teatersal.small.jpg");
+    background-image: url("../images/dividers/piratfest.small.jpg");
     @supports (grid-template-columns: subgrid) {
-      background-image: url("../images/dividers/teatersal.small.webp");
+      background-image: url("../images/dividers/piratfest.small.webp");
     }
   }
 }
@@ -38,20 +38,20 @@
   }
 
   div.parallax-image-gigs {
-    background-image: url("../images/dividers/teatersal.jpg");
+    background-image: url("../images/dividers/piratfest.jpg");
     @supports (grid-template-columns: subgrid) {
-      background-image: url("../images/dividers/teatersal.webp");
+      background-image: url("../images/dividers/piratfest.webp");
     }
   }
 }
 
 div.parallax-image-socnet {
   margin-top: -5vh;
-}
-
-div.parallax-image-socnet.lazy {
-  background-image: none;
-  background-color: var(--main-complementary-color);
+  
+  .lazy {
+    background-image: none;
+    background-color: var(--main-complementary-color);
+  }
 }
 
 div.parallax-image-contact {
