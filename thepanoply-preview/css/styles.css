@@ -1,6 +1,6 @@
 :root {
   --main-complementary-color: #018bfa;
-  --main-color: #fe7405;
+  --main-color: #F79420;
   --secondary-color: #ffc686;
   --secondary-complementary-color: #003979;
 
@@ -25,7 +25,7 @@ body {
   min-height: 300%;
   width: 100%;
   font-family: sans-serif, Arial, Helvetica, Montserrat, "Helvetica Neue";
-  margin: 0;
+  margin-left: auto;
   padding: 0;
   position: relative;
   z-index: 0;
@@ -37,25 +37,25 @@ div.section {
   background-color: white;
   width: 100%;
   min-height: 0;
-  padding: 3em calc(20vw - 70px);
+  /* padding: 3em calc(20vw - 70px); */
   z-index: 1;
   text-align: center;
 }
 
-div.section-header {
+.section-header {
   position: relative;
   width: 100%;
-  height: 40vh;
+  height: 1vh;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
   z-index: 2;
 }
 
-div.header-text {
+.header-text {
   height: auto;
   padding: 0px 20px;
-  padding-left: calc(20vw - 70px);
+  /* padding-left: calc(20vw - 70px); */
   margin-bottom: 40px;
   color: white;
   background: var(--main-color);
@@ -70,9 +70,10 @@ iframe {
   border: 0px;
 }
 
-#fotografer {
+footer {
   margin: 0;
   font-size: 10px;
+  text-align: center;
 }
 
 section {
@@ -81,7 +82,8 @@ section {
   background-color: white;
   width: 100%;
   min-height: 0;
-  padding: 3em calc(20vw - 70px);
+  /* padding: 3em calc(20vw - 70px); */
+  padding-bottom: 10px; 
   z-index: 1;
 }
 
@@ -137,6 +139,11 @@ a img {
   div.parallax-image-contact {
     background-image: url("../images/dividers/contactdivider.small.webp");
   }
+
+  .header-text {
+    margin-left: 10vw;
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 901px) {
@@ -146,6 +153,11 @@ a img {
 
   div.parallax-image-contact {
     background-image: url("../images/dividers/contactdivider.webp");
+  }
+
+  .header-text {
+    margin-left: 20vw;
+    font-size: 3rem;
   }
 }
 
@@ -179,6 +191,24 @@ div.parallax-image-contact.lazy {
   -moz-background-size: cover;
   background-size: cover;
   z-index: -1;
+}
+
+
+.header-text {
+  margin-left: 20vw;
+  font-size: 3rem;
+}
+
+
+.fixed {
+  top: 15vh;
+  width: 100%;
+  height: 30vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  z-index: -1;
+  background-attachment: fixed;
 }
 
 /* ->DIVIDERS */

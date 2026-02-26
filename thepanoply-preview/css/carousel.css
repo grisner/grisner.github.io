@@ -28,13 +28,11 @@
 
 /* Hide scrollbar */
 .carousel__slides {
-  scrollbar-width: none;
-  /* Firefox and latest Chromium */
+  scrollbar-width: none; /* Firefox and latest Chromium */
 }
 
 .carousel__slides::-webkit-scrollbar {
-  display: none;
-  /* Safari and legacy Chromium */
+  display: none; /* Safari and legacy Chromium */
 }
 
 /* Styling nav dots */
@@ -69,13 +67,11 @@
 }
 
 .carousel__navdots button.is-active {
-  background-color: #0060a8;
-  /* blue */
+  background-color: #0060a8; /* blue */
 }
 
 .carousel__navdots button:focus-visible {
-  outline: 2px solid #0060a8;
-  /* blue */
+  outline: 2px solid #0060a8; /* blue */
   outline-offset: 2px;
 }
 

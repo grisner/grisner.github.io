@@ -1,14 +1,21 @@
 table {
   width: 100%;
+  max-width: var(--max-width);
+  margin: auto;
 }
 
-.firstColumn {
+tr {
+  height: 3rem;
+  text-align: left;
+}
+
+/* .firstColumn {
   text-align: left;
 }
 
 .lastColumn {
   text-align: right;
-}
+} */
 
 .secondTr {
   background-color: var(--secondary-color);

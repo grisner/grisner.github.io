@@ -1,28 +1,47 @@
 @media (max-width: 900px) {
   div.parallax-image-socnet {
-    background-image: url("../images/dividers/socnetdivider.small.webp");
+    
+    background-image: url("../images/dividers/socnetdivider.small.jpg");
+    @supports (grid-template-columns: subgrid) {
+      background-image: url("../images/dividers/socnetdivider.small.webp");
+    }
   }
 
   div.parallax-image-contact {
-    background-image: url("../images/dividers/contactdivider.small.webp");
+    background-image: url("../images/dividers/contactdivider.small.jpg");
+    @supports (grid-template-columns: subgrid) {
+      background-image: url("../images/dividers/contactdivider.small.webp");
+    }
   }
 
   div.parallax-image-gigs {
-    background-image: url("../images/dividers/teatersal.small.webp");
+    background-image: url("../images/dividers/teatersal.small.jpg");
+    @supports (grid-template-columns: subgrid) {
+      background-image: url("../images/dividers/teatersal.small.webp");
+    }
   }
 }
 
 @media (min-width: 901px) {
   div.parallax-image-socnet {
-    background-image: url("../images/dividers/socnetdivider.webp");
+    background-image: url("../images/dividers/socnetdivider.jpg");
+    @supports (grid-template-columns: subgrid) {
+      background-image: url("../images/dividers/socnetdivider.webp");
+    }
   }
 
   div.parallax-image-contact {
-    background-image: url("../images/dividers/contactdivider.webp");
+    background-image: url("../images/dividers/contactdivider.jpg");
+    @supports (grid-template-columns: subgrid) {
+      background-image: url("../images/dividers/contactdivider.webp");
+    }
   }
 
   div.parallax-image-gigs {
-    background-image: url("../images/dividers/teatersal.webp");
+    background-image: url("../images/dividers/teatersal.jpg");
+    @supports (grid-template-columns: subgrid) {
+      background-image: url("../images/dividers/teatersal.webp");
+    }
   }
 }
 
