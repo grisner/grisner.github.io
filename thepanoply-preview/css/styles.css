@@ -9,9 +9,9 @@
 
 @font-face {
   font-family: "PottaOne";
-  /*src: url("/thepanoply-preview/fonts/pottaone-regular.woff2");*/
+  src: url("/thepanoply-preview/fonts/pottaone-regular.woff2");
   /* line above used for preview deployment, line below used for prod deployment  */
-  src: url("/fonts/pottaone-regular.woff2");
+  /* src: url("/fonts/pottaone-regular.woff2"); */
 }
 
 *,
