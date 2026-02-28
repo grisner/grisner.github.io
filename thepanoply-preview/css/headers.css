@@ -1,13 +1,8 @@
-#Hem {
-  position: relative;
-  height: 166px;
-  z-index: 10;
-}
-
 h1 {
-  font-family: sans-serif, Arial, Helvetica, Montserrat, "Helvetica Neue";
+  font-family: "PottaOne";
   font-weight: 700;
   color: black;
+  margin: 0px;
 }
 
 h2 {
@@ -15,6 +10,31 @@ h2 {
   font-family: "PottaOne";
 }
 
-p.nav {
+.nav {
   min-height: 73px;
+
+  img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 400px) {
+  .header-text {
+    margin-left: 5vw;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 900px) {
+  .header-text {
+    margin-left: 10vw;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 901px) {
+  .header-text {
+    margin-left: 20vw;
+    font-size: 3rem;
+  }
 }

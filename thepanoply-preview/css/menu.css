@@ -1,78 +1,62 @@
+body {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  background-color: var(--main-color);
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+#banner {
+  width: 100%;
+  background-color: var(--main-color);
+}
+
+#banner-image {
+  display: block;
+  margin: auto;
+  max-width: 1100px;
+  width: 100%;
+}
+
 img {
   max-width: 100%;
   max-height: 100%;
 }
 
-#NavWrap {
-  position: fixed;
-  background: var(--main-color);
-  width: 100%;
+nav {
+  display: flex;
+  justify-content: center;
+  padding-left: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-family: 'PottaOne';
+  font-size: 14px;
 }
 
-#Nav {
-  background-color: transparent;
-  width: 90%;
-  margin: auto;
-  text-align: center;
-}
-
-.navOnHeader {
-  padding-top: 15px;
-  padding-bottom: 3px;
-}
-
-#Nav ul {
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-}
-
-@media (max-width: 400px) {
-  #Nav li {
-    font-weight: 400;
-    font-size: 12px;
-  }
-}
-
-@media ((min-width: 401px) and (max-width: 900px)) {
-  #Nav li {
-    font-weight: 400;
-    font-size: 12px;
-  }
-}
-
-@media (min-width: 451px) {
-  #Nav li {
-    font-weight: 400;
-    font-size: 14px;
-  }
-}
-
-#Nav li {
-  font-family: "PottaOne";
-  line-height: 20px;
-  float: left;
-
-  padding: 10px 10px;
-  background-color: transparent;
-  color: #fff;
-  list-style-type: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin: 0 10px 0 0;
-  list-style-type: none;
-}
-
-#Nav li a {
+nav > a {
   color: black;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  letter-spacing: 1px;
+  list-style-type: none;
+  background-color: transparent;
+  margin: 0 10px 0 0;
   text-decoration: none;
   line-height: 20px;
 }
 
-#Nav li a:hover {
+nav > a:hover {
   color: white;
 }
 
-#Nav li a:active {
-  color: #7f4f29;
+nav > a:active {
+  color: var(--secondary-color);
 }

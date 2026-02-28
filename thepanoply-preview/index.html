@@ -43,54 +43,25 @@
         <link href="css/parallax-images.css" rel="stylesheet" />
 
         <script src="js/lazyloader.js"></script>
+        <script src="js/googlesheet.js"></script>
     </head>
     <body>
         <!-- Page header -->
-        <div id="Hem">
-            <div id="NavWrap" class="container">
-                <div id="Nav" class="navOnHeader">
-                    <p class="nav">
-                        <img
-                            src="images/the_panoply_header.svg"
-                            alt="The Panoply"
-                        />
-                    </p>
-                    <ul>
-                        <li>
-                            <a id="AboutLink" href="#Hem" class="smoothScroll"
-                                >om</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                id="ContactLink"
-                                href="#ContactSectionHeader"
-                                class="smoothScroll"
-                            >
-                                boka
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                id="SocnetLink"
-                                href="#MediaSectionHeader"
-                                class="smoothScroll"
-                                >videor</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                id="GigLink"
-                                href="#DoneGigsSectionHeader"
-                                class="smoothScroll"
-                                >spelningar</a
-                            >
-                        </li>
-                    </ul>
-                    <!-- <br class="clearLeft" /> -->
-                </div>
-            </div>
-        </div>
+        <div id="top"></div>
+        <!-- Page header -->
+        <h1 role="main-header" id="banner">
+          <img id="banner-image" src="images/banner.svg" alt="The Panoply" />
+        </h1>
+        <header id="Menu">
+          <nav id="Nav">
+            <a id="AboutLink" href="#SocnetIcons" class="smoothScroll">om</a>
+            <a id="ContactLink" href="#ContactParallax" class="smoothScroll">
+              boka
+            </a>
+            <a id="SocnetLink" href="#VideoHeader" class="smoothScroll"> videor </a>
+            <a id="GigLink" href="#DoneGigsSectionHeader" class="smoothScroll"> spelningar </a>
+          </nav>
+        </header>
 
         <!-- Social network icons section -->
         <section id="SocnetIcons">
@@ -239,7 +210,7 @@
 
         <section id="DoneGigSection">
             <table id="gigs"></table>
-            <script src="js/googlesheet.js"></script>
+            
             <noscript
                 >Om du hade haft javascript aktivt hade du sett en lista på alla
                 spännande gigs vi gjort här</noscript
