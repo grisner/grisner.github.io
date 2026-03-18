@@ -20,3 +20,9 @@ tr {
 .secondTr {
   background-color: var(--secondary-color);
 }
+
+#paginateButton {
+  border: 0px;
+  background-color: white;
+  text-decoration: underline;
+}

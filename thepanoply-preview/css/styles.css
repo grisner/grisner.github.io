@@ -1,24 +1,24 @@
 :root {
   --main-complementary-color: #018bfa;
-  --main-color: #F79420;
+  --main-color: #f79420;
   --secondary-color: #ffc686;
   --secondary-complementary-color: #003979;
 
-  --max-width: 1350px;
+  --max-width: 1100px;
 }
 
 @font-face {
   font-family: "PottaOne";
-  src: url("/thepanoply-preview/fonts/pottaone-regular.woff2");
+  /* src: url("/thepanoply-preview/fonts/pottaone-regular.woff2"); */
   /* line above used for preview deployment, line below used for prod deployment  */
-  /* src: url("/fonts/pottaone-regular.woff2"); */
+  src: url("/fonts/pottaone-regular.woff2");
 }
 
 @font-face {
   font-family: "Rambla";
-  src: url("/thepanoply-preview/fonts/rambla-regular.ttf");
+  /* src: url("/thepanoply-preview/fonts/rambla-regular.ttf"); */
   /* line above used for preview deployment, line below used for prod deployment  */
-  /* src: url("/fonts/rambla-regular.ttf"); */
+  src: url("/fonts/rambla-regular.ttf");
 }
 
 *,
@@ -31,7 +31,8 @@ html,
 body {
   min-height: 300%;
   width: 100%;
-  font-family: Rambla, sans-serif, Arial, Helvetica, Montserrat, "Helvetica Neue";
+  font-family:
+    Rambla, sans-serif, Arial, Helvetica, Montserrat, "Helvetica Neue";
   margin-left: auto;
   padding: 0;
   position: relative;
@@ -44,7 +45,6 @@ div.section {
   background-color: white;
   width: 100%;
   min-height: 0;
-  /* padding: 3em calc(20vw - 70px); */
   z-index: 1;
   text-align: center;
 }
@@ -95,7 +95,7 @@ section {
   width: 100%;
   min-height: 0;
   /* padding: 3em calc(20vw - 70px); */
-  padding-bottom: 10px; 
+  padding-bottom: 10px;
   z-index: 1;
 }
 
@@ -159,17 +159,16 @@ div.parallax-image-contact.lazy {
 .fixed {
   top: 10vh;
   width: 100%;
-  
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   z-index: -1;
 }
 
-
 /* IOS Safari doesn't support fixed, see https://bugs.webkit.org/show_bug.cgi?id=275247 */
 /* This is IOS Safari */
-@supports (-webkit-touch-callout: none) {  
+@supports (-webkit-touch-callout: none) {
   .fixed {
     position: -webkit-sticky; /* Safari */
     position: sticky;

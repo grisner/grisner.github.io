@@ -8,3 +8,5 @@ Det finns en lista över bilder i js/carousel.js som behöver uppdateras om bild
 
 # Att göra
 För att se vad som behöver fixas, gå till [Issues](https://github.com/ThePanoply/ThePanoply.github.io/issues).
+
+Please read these files deeply, understand the relationships, how they all work together. If there are files referenced that I missed don't hesitate to ask. When you understand all the parts, write a detailed report in a file called description.md

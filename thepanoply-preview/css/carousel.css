@@ -37,7 +37,7 @@
 
 /* Styling nav dots */
 .carousel {
-  padding-bottom: 30px;
+  padding-bottom: 5px;
   position: relative;
 }
 
@@ -67,7 +67,7 @@
 }
 
 .carousel__navdots button.is-active {
-  background-color: #0060a8; /* blue */
+  background-color: var(--main-color); /* blue */
 }
 
 .carousel__navdots button:focus-visible {

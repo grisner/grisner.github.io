@@ -1,6 +1,20 @@
 // url of the google sheet
 const csvUrl = `https://docs.google.com/spreadsheets/d/10dt27NU05LcEZJcv1qyzAM1yOFAejA7Fx7QS2BzzyYs/export?format=csv`;
 
+// Checking if there is a current pagination count
+// let gigPage = Number.parseInt(window.sessionStorage.getItem("gigPage") ?? 1);
+let gigPage = 1;
+let rows = [];
+
+const paginationLength = 10;
+
+function paginateNext() {
+  console.log("pagination");
+  gigPage += paginationLength;
+  // window.sessionStorage.setItem("gigPage", gigPage);
+  populateRows();
+}
+
 // Simple CSV parser (splits on newlines and commas)
 // For more robust parsing, use PapaParse or a similar library
 async function loadSheetAsCsv() {
@@ -16,32 +30,20 @@ async function loadSheetAsCsv() {
   return rows;
 }
 
-const loadTable = async () => {
-  const rows = await loadSheetAsCsv().catch(console.error);
-
+function populateRows() {
   const table = document.getElementById("gigs");
-
-  // headers
-  const headerRow = document.createElement("tr");
-  rows[0].map((column, idx) => {
-    const headerColumn = document.createElement("th");
-    if (idx === 0) {
-      headerColumn.setAttribute("class", "firstColumn");
-    } else if (idx === rows[0].length - 1) {
-      headerColumn.setAttribute("class", "lastColumn");
-    } else {
-      headerColumn.setAttribute("class", "middleColumns");
-    }
-
-    headerColumn.innerText = column;
-    headerRow.appendChild(headerColumn);
-  });
-  table.appendChild(headerRow);
+  console.log({ gigPage, paginationLength, length: rows.length });
 
   // data rows
-  for (let i = 1; i < rows.length; i++) {
+  for (
+    let i = gigPage;
+    i < gigPage + paginationLength && i < rows.length;
+    i++
+  ) {
     const tableRow = document.createElement("tr");
     let columnHeader = "";
+
+    console.log(`Row ${i} of ${gigPage + paginationLength}`);
 
     if (i % 2 === 0) {
       tableRow.setAttribute("class", "secondTr");
@@ -81,9 +83,43 @@ const loadTable = async () => {
         tableRow.appendChild(columnElm);
       }
 
+      console.log("appending row", tableRow);
+
       table.appendChild(tableRow);
     }
+
+    console.log("rows populated");
   }
+}
+
+const loadTable = async () => {
+  rows = await loadSheetAsCsv().catch(console.error);
+
+  console.log("showing button");
+  document.getElementById("paginateButton").style.visibility = "visible";
+
+  console.log("creating table");
+  const table = document.getElementById("gigs");
+
+  // headers
+  console.log("creating columns");
+  const headerRow = document.createElement("tr");
+  rows[0].map((column, idx) => {
+    const headerColumn = document.createElement("th");
+    if (idx === 0) {
+      headerColumn.setAttribute("class", "firstColumn");
+    } else if (idx === rows[0].length - 1) {
+      headerColumn.setAttribute("class", "lastColumn");
+    } else {
+      headerColumn.setAttribute("class", "middleColumns");
+    }
+
+    headerColumn.innerText = column;
+    headerRow.appendChild(headerColumn);
+  });
+  table.appendChild(headerRow);
+
+  populateRows();
 };
 
 loadTable();
