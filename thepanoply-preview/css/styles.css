@@ -9,16 +9,16 @@
 
 @font-face {
   font-family: "PottaOne";
-  /* src: url("/thepanoply-preview/fonts/pottaone-regular.woff2"); */
+  src: url("/thepanoply-preview/fonts/pottaone-regular.woff2");
   /* line above used for preview deployment, line below used for prod deployment  */
-  src: url("/fonts/pottaone-regular.woff2");
+  /*src: url("/fonts/pottaone-regular.woff2");*/
 }
 
 @font-face {
   font-family: "Rambla";
-  /* src: url("/thepanoply-preview/fonts/rambla-regular.ttf"); */
+  src: url("/thepanoply-preview/fonts/rambla-regular.ttf");
   /* line above used for preview deployment, line below used for prod deployment  */
-  src: url("/fonts/rambla-regular.ttf");
+  /*src: url("/fonts/rambla-regular.ttf");*/
 }
 
 *,
@@ -182,7 +182,6 @@ div.parallax-image-contact.lazy {
     height: 30vh;
     background-attachment: fixed;
   }
-
 }
 
 /* ->DIVIDERS */
