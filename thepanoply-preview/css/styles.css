@@ -94,9 +94,15 @@ section {
   background-color: white;
   width: 100%;
   min-height: 0;
-  /* padding: 3em calc(20vw - 70px); */
   padding-bottom: 10px;
   z-index: 1;
+}
+
+.introtext {
+  text-align: left;
+  width: 90%;
+  max-width: var(--max-width);
+  display: inline-table;
 }
 
 /* SocnetIcons */
