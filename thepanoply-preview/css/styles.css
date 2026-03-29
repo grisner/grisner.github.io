@@ -9,16 +9,16 @@
 
 @font-face {
   font-family: "PottaOne";
-  src: url("/thepanoply-preview/fonts/pottaone-regular.woff2");
+  /* src: url("/thepanoply-preview/fonts/pottaone-regular.woff2"); */
   /* line above used for preview deployment, line below used for prod deployment  */
-  /* src: url("/fonts/pottaone-regular.woff2"); */
+  src: url("/fonts/pottaone-regular.woff2");
 }
 
 @font-face {
   font-family: "Rambla";
-  /* src: url("/thepanoply-preview/fonts/rambla-regular.ttf"); */
+  src: url("/thepanoply-preview/fonts/rambla-regular.ttf");
   /* line above used for preview deployment, line below used for prod deployment  */
-  src: url("/fonts/rambla-regular.ttf");
+  /* src: url("/fonts/rambla-regular.ttf"); */
 }
 
 *,
@@ -94,9 +94,15 @@ section {
   background-color: white;
   width: 100%;
   min-height: 0;
-  /* padding: 3em calc(20vw - 70px); */
   padding-bottom: 10px;
   z-index: 1;
+}
+
+.introtext {
+  text-align: left;
+  width: 90%;
+  max-width: var(--max-width);
+  display: inline-table;
 }
 
 /* SocnetIcons */

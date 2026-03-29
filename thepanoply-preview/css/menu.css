@@ -29,16 +29,13 @@ img {
 }
 
 nav {
-  max-width: var(--max-width);
   display: flex;
   justify-content: center;
   padding-left: 0px;
   margin-bottom: 0px;
   margin-top: 0px;
-  margin: auto;
   font-family: 'PottaOne';
-  font-size: 18px;
-  justify-content: space-evenly;
+  font-size: 14px;
 }
 
 nav > a {
