@@ -41,6 +41,12 @@ nav {
   justify-content: space-evenly;
 }
 
+@media (max-width: 600px) {
+  nav {
+    font-size: 14px;
+  }
+}
+
 nav > a {
   color: black;
   text-transform: uppercase;

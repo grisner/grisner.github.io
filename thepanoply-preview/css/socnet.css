@@ -24,7 +24,7 @@
     height: 38px;
   }
 
-  padding-bottom: 30px;
+  padding-bottom: 30px; /* safari doesn't seem to support padding-only */
   padding: 5px 5px 30px 5px;
   z-index: 2;
 }
