@@ -49,24 +49,7 @@ div.section {
   text-align: center;
 }
 
-.section-header {
-  position: relative;
-  width: 100%;
-  height: 1vh;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  z-index: 2;
-}
 
-.header-text {
-  height: auto;
-  padding: 0px 20px;
-  /* padding-left: calc(20vw - 70px); */
-  margin-bottom: 40px;
-  color: white;
-  background: var(--main-color);
-}
 
 div.section:last-child {
   min-height: 100%;

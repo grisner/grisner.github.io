@@ -1,9 +1,17 @@
 // images
 const imageNames = [
-  "anders.annakarin",
-  "palssons",
-  "uppsala.slott",
-  "nilssons",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+  "10",
+  "11",
+  "12",
 ];
 
 const extension = (checkWebPSupport() && "webp") || "jpg";
@@ -14,7 +22,6 @@ const small = imageNames.map(
 
 // Creating image elements
 const slideContainer = document.getElementById("slide_container");
-const navDots = document.getElementById("carousel_navdots");
 const images = screen.width > 1000 ? large : small;
 
 function checkWebPSupport() {                                                                                                                                                                   
@@ -41,21 +48,12 @@ images.forEach((url, id) => {
 
   slide.appendChild(img);
   slideContainer.appendChild(slide);
-
-  // <button type="button" aria-label="1 of 4" aria-disabled="true"></button>
-  const navDot = document.createElement("button");
-  navDot.setAttribute("type", "button");
-  navDot.setAttribute("aria-label", `${id} of ${images.length}`);
-  navDot.setAttribute("aria-disabled", id === 0 ? "true" : "false");
-  navDots.appendChild(navDot);
 });
 
 // Components
 const carouselContainer = document.querySelector(".carousel");
 const slideWrapper = document.querySelector(".carousel__slides");
 const slides = document.querySelectorAll(".carousel__slide");
-const navdotWrapper = document.querySelector(".carousel__navdots");
-const navdots = document.querySelectorAll(".carousel__navdots button");
 
 // Parameters
 const n_slides = slides.length;
@@ -80,27 +78,9 @@ function goto(index) {
     0,
   );
 }
-for (let i = 0; i < n_slides; i++) {
-  navdots[i].addEventListener("click", () => goto(i));
-}
 
-// Marking nav dots
-function markNavdot(index) {
-  navdots[index].classList.add("is-active");
-  navdots[index].setAttribute("aria-disabled", "true");
-}
-function updateNavdot() {
-  const c = index_slideCurrent();
-  if (c < 0 || c >= n_slides) return; // in these cases, forward() and rewind() will be executed soon
-  markNavdot(c);
-}
 let scrollTimer;
 slideWrapper.addEventListener("scroll", () => {
-  // reset
-  navdots.forEach((navdot) => {
-    navdot.classList.remove("is-active");
-    navdot.setAttribute("aria-disabled", "false");
-  });
   // handle infinite scrolling
   if (scrollTimer) clearTimeout(scrollTimer); // to cancel if scroll continues
   scrollTimer = setTimeout(() => {
@@ -117,8 +97,6 @@ slideWrapper.addEventListener("scroll", () => {
       rewind();
     }
   }, 100);
-  // mark the navdot
-  updateNavdot();
 });
 
 // Handle window resizing
@@ -174,7 +152,7 @@ function forward() {
 function next() {
   goto(index_slideCurrent() + 1);
 }
-const pause = 10000;
+const pause = 5000;
 let itv;
 function play() {
   // early return if the user prefers reduced motion
@@ -221,5 +199,4 @@ carouselContainer.addEventListener("touchstart", () => stop());
 
 // Initialization
 goto(0);
-markNavdot(0);
 slideWrapper.classList.add("smooth-scroll");

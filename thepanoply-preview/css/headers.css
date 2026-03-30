@@ -18,23 +18,45 @@ h2 {
   }
 }
 
+.section-header {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--max-width);
+  position: relative;
+  width: 90%;
+  height: 1vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  z-index: 2;
+}
+
+.header-text {
+  height: auto;
+  padding: 0px 20px;
+  /* padding-left: calc(20vw - 70px); */
+  margin-bottom: 40px;
+  color: white;
+  background: var(--main-color);
+}
+
 @media (max-width: 400px) {
   .header-text {
-    margin-left: 5vw;
+    /* margin-left: 5vw; */
     font-size: 1rem;
   }
 }
 
 @media (min-width: 401px) and (max-width: 900px) {
   .header-text {
-    margin-left: 10vw;
+    /* margin-left: 10vw; */
     font-size: 2rem;
   }
 }
 
 @media (min-width: 901px) {
   .header-text {
-    margin-left: 20vw;
+    /* margin-left: 20vw; */
     font-size: 3rem;
   }
 }
