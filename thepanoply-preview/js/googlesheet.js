@@ -43,7 +43,6 @@ function populateRows() {
     const tableRow = document.createElement("tr");
     let columnHeader = "";
 
-    console.log(`Row ${i} of ${gigPage + paginationLength}`);
 
     if (i % 2 === 0) {
       tableRow.setAttribute("class", "secondTr");
@@ -82,8 +81,6 @@ function populateRows() {
         columnElm.innerText = column;
         tableRow.appendChild(columnElm);
       }
-
-      console.log("appending row", tableRow);
 
       table.appendChild(tableRow);
     }

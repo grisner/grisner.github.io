@@ -5,18 +5,14 @@ table {
   border-collapse: collapse;
 }
 
+#DoneGigSection {
+  flex-flow: column;
+}
+
 tr {
   height: 3rem;
   text-align: left;
 }
-
-/* .firstColumn {
-  text-align: left;
-}
-
-.lastColumn {
-  text-align: right;
-} */
 
 .secondTr {
   background-color: var(--secondary-color);

@@ -37,7 +37,10 @@
     <link href="css/carousel.css" rel="stylesheet" />
     <link href="css/table.css" rel="stylesheet" />
     <link href="css/parallax-images.css" rel="stylesheet" />
+    <link href="css/form.css" rel="stylesheet" />
+    <link href="css/buttons.css" rel="stylesheet" />
 
+    <script src="js/form.js"></script>
     <script src="js/lazyloader.js"></script>
     <script src="js/googlesheet.js"></script>
   </head>
@@ -49,16 +52,22 @@
     </h1>
     <header id="Menu">
       <nav id="Nav">
-        <a id="AboutLink" href="#top" class="smoothScroll">om</a>
-        <a id="ContactLink" href="#ContactSectionHeader" class="smoothScroll">
-          boka
-        </a>
-        <a id="SocnetLink" href="#MediaSectionHeader" class="smoothScroll">
-          videor
-        </a>
-        <a id="GigLink" href="#DoneGigsSectionHeader" class="smoothScroll">
-          spelningar
-        </a>
+        <div class="nav-left">
+          <a id="AboutLink" href="#top">
+            om
+          </a>
+          <a id="SocnetLink" href="#MediaSectionHeader">
+            videor
+          </a>
+          <a id="GigLink" href="#DoneGigsSectionHeader">
+            spelningar
+          </a>
+        </div>
+        <div class="nav-right">
+          <a class="cta_menu" id="ContactLink" href="#ContactSectionHeader">
+            boka
+          </a>
+        </div>
       </nav>
     </header>
 
@@ -88,6 +97,7 @@
         <p><b>Hej där!</b> Vi är The Panoply Steelband - en grupp engagerade musiker som spelar oljefat runtom i Stockholm och resten av landet med utgångspunkt i Södertälje. Vår repertoar innehåller de flesta typer av musik - allt från hårdrock, till modern pop, till karibisk musik. Vi spelar både covers och egenkomponerad musik.</p>
         <p>Vi spelar oljefat - ett instrument som ursprungligen kommer från Trinidad och Tobago. Instrumentet är tillverkat av gamla oljetunnor och består av olika stämmor. Ljudbilden är energisk och fartfylld, och påminner lite om en blandning av kyrkklockor och xylofoner. Vi underhåller på event, fester, konserter, festivaler, och liknande.</p>
         <p>Vi erbjuder även prova på-workshops och musikquiz. Boka oss om du vill ha en unik upplevelse till ditt event!</p>
+        <p class="cta"><a class="btn" href="#ContactSectionHeader">Boka oss</a></p>
       </div>
     </section>
 
@@ -147,12 +157,23 @@
 
     <!-- Contact section -->
     <section id="ContactSection">
-      <iframe
-        loading="lazy"
-        id="GoogleForm"
-        src="https://docs.google.com/forms/d/1NtQk-lAuL8Eh4UjLNLOfAnxoT9NpVxz24FW_iUCtreg/viewform?embedded=true"
-      >
-      </iframe>
+      <form onsubmit="return post(event)" method="post">
+        <p>Kul att du vill boka oss! Fyll i formuläret så hör vi av oss!</p>
+        <label for="mail" class="inputlabel">E-postadress:</label>
+        <input id="mail" class="inputtext" required />
+  
+        <label for="telno" class="inputlabel">Telefonnummer:</label>
+        <input type="tel" id="telno" class="inputtext" required />
+  
+        <label for="place" class="inputlabel">Var ska vi spela?</label>
+        <input type="text" id="place" class="inputtext" required />
+  
+        <label for="dateTime" class="inputlabel">När ska vi spela?</label>
+        <input type="datetime-local" id="dateTime" class="inputtext" min="2026-01-01" required />
+  
+        <input type="submit" id="submit" class="btn" value="Skicka">
+        <span id="sentStatus" class="toaster" style="visibility: hidden;" >Förfrågan skickad</span>
+      </form>
     </section>
 
     <!-- Media section divider -->

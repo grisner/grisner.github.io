@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<script src="js/form.js"></script>
+		<link href="css/form.css" rel="stylesheet" />
+		<link href="css/styles.css" rel="stylesheet" />
+	</head>
+	<body>
+		
+		<form onsubmit="return post(event)" method="post">
+			<label for="mail" class="inputlabel">E-postadress:</label>
+			<input id="mail" class="inputtext" required />
+
+			<label for="telno" class="inputlabel">Telefonnummer:</label>
+			<input type="tel" id="telno" class="inputtext" required />
+
+			<label for="place" class="inputlabel">Var ska vi spela?</label>
+			<input type="text" id="place" class="inputtext" />
+
+			<label for="dateTime" class="inputlabel">När ska vi spela?</label>
+			<input type="datetime-local" id="dateTime" class="inputtext" min="2026-01-01" />
+
+			<input type="submit" id="submit" value="Skicka">
+		</form>
+	</body>
+</html>

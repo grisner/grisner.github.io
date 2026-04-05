@@ -35,9 +35,9 @@
   display: none; /* Safari and legacy Chromium */
 }
 
-/* Styling nav dots */
+/* Styling relative to next section */
 .carousel {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   position: relative;
 }
 
@@ -45,22 +45,8 @@
 .carousel-wrapper {
   align-items: center;
   display: flex;
-  /*height: 100vh;*/
-  /*padding: 0 200px;*/
 }
 
 .carousel {
   margin: 0 auto;
 }
-
-/*img {
-    height: auto;
-    max-width: 100%;
-}
-body {
-    margin: 50px;
-}*/
-/*p {
-    font-family: Georgia, serif;
-    font-size: 75px;
-}*/
