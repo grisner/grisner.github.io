@@ -18,16 +18,3 @@
 .btn:active {
   background-color: var(--main-color);
 }
-
-.toaster {
-  border-radius: 25px;
-  background-color: var(--secondary-color);
-  color: white;
-  padding: 14px 50px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-family: "PottaOne";
-  font-size: 18px;
-  border-style: none;
-}

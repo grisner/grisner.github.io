@@ -3,6 +3,7 @@ form {
   max-width: 900px;
   justify-self: center;
   font-size: 18px;
+  display:grid;
 }
 
 /* #submit {
@@ -18,17 +19,64 @@ form {
 
 .inputtext {
   border-width: 3px;
-  margin-bottom: 4vh;
   font-size: 20px;
   padding: 6px;
   height: 60px;
   font-family: Rambla;
   width: 100%;
   border-radius: 8px;
-  border-block-style: solid;
+  border-style: solid;
   border-color: var(--main-color);
+}
+
+.field {
+  margin-bottom: 4vh;
+}
+
+.error {
+  display: none;
+  color: #c62828;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.field:has(.inputtext:user-invalid) .error {
+  display: block;
+}
+
+.inputtext:user-valid {
+  border-color: var(--main-color);
+  outline: none;
+}
+
+
+
+.inputtext:user-invalid  {
+  border-color: red;
 }
 
 .inputlabel {
   font-weight: 700;
+}
+
+#submit {
+  justify-self: center;
+}
+
+#sentStatus {
+  width: 100%;
+  visibility: hidden;
+}
+
+.toaster {
+  margin-top: 12px;
+  background-color: var(--main-color);
+  color: white;
+  padding: 14px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "PottaOne";
+  font-size: 18px;
+  border-style: none;
 }
