@@ -11,10 +11,10 @@
   border-style: none;
 }
 
-.btn:hover, .disabled {
+.btn:hover, :disabled, :disabled {
   background-color: var(--secondary-color);
 }
 
-.btn:active {
+.enabled:active {
   background-color: var(--main-color);
 }

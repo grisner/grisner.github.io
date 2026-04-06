@@ -162,29 +162,29 @@
 
         <div class="field">
           <label for="mail" class="inputlabel">E-postadress:</label>
-          <input id="mail" type="email" class="inputtext" required aria-describedby="mail-error" aria-invalid="false" />
+          <input id="mail" type="email" class="inputtext" required aria-describedby="mail-error" aria-invalid="false" onchange="reEnableForm()" />
           <span id="mail-error" class="error" aria-live="polite">Vänligen ange en korrekt mailadress</span>
         </div>
   
         <div class="field">
           <label for="telno" class="inputlabel">Telefonnummer:</label>
-          <input type="tel" id="telno" class="inputtext" required aria-describedby="telno-error" aria-invalid="false" />
+          <input type="tel" id="telno" class="inputtext" required aria-describedby="telno-error" aria-invalid="false" onchange="reEnableForm()" />
           <span id="telno-error" class="error" aria-live="polite">Vänligen ange ett korrekt telefonnummer</span>
         </div>
     
         <div class="field">
           <label for="place" class="inputlabel">Var ska vi spela?</label>
-          <input type="tel" id="place" class="inputtext" required aria-describedby="place-error" aria-invalid="false" />
+          <input type="text" id="place" class="inputtext" required aria-describedby="place-error" aria-invalid="false" onchange="reEnableForm()" />
           <span id="place-error" class="error" aria-live="polite">Vänligen ange en korrekt plats</span>
         </div>
     
         <div class="field">
         <label for="date" class="inputlabel">När ska vi spela?</label>
-        <input type="date" id="date" class="inputtext" min="2026-01-01" required aria-describedby="date-error" aria-invalid="false" />
+        <input type="date" id="date" class="inputtext" min="2026-01-01" required aria-describedby="date-error" aria-invalid="false" onchange="reEnableForm()" />
         <span id="date-error" class="error" aria-live="polite">Vänligen ange ett rimligt datum</span>
       </div>
   
-      <input type="submit" id="submit" class="btn" value="Skicka">
+      <input type="submit" id="submit" class="btn enabled" value="Skicka">
       <span id="sentStatus" class="toaster" >Tack för din förfrågan! Vi hör av oss inom några dagar.</span>
     
       </form>
