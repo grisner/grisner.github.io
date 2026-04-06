@@ -1,7 +1,7 @@
 const baseUrl="https://docs.google.com/forms/d/e";
 
 /*## -- Prodform -- ##*/
-const _prms = {
+const prms = {
 	id: "1FAIpQLSdwnB0_50U8xu14WWsWq9XKouXCk7J3jojb8-8JOxBzujZjpg",
 	mail: "entry.1085999444",
 	telno: "entry.1146311830",
@@ -13,7 +13,7 @@ const _prms = {
 
 /*## -- Exempelform -- ##*/
 
-const prms = {
+const _prms = {
 	id: "1FAIpQLScTm5KoP2kXT1wh5mtM3DI4S84NzGfCh_NkO69MKzqWlwkMUg",
 	mail: "entry.1349343839",
 	telno: "entry.1662488425",
