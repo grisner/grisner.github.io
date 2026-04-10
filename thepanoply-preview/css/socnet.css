@@ -4,12 +4,11 @@
 }
 
 .socnetiframe {
-  width: 100%;
+  width: 80%;
+  max-width: calc(var(--max-width));
   height: 40vh;
 }
 
 #Youtube-Root {
   text-align: center;
-  width: 80%;
-  max-width:var(--max-width);
 }
