@@ -1,52 +1,66 @@
-/* Show just one 991px wide slide at a time */
-.carousel {
-  width: 100%;
-  max-width: var(--max-width);
-}
-
-.carousel__slides,
-.carousel__slide {
-  width: 100%;
-}
-
-/* Make carousel swipeable */
-.carousel__slides {
-  column-gap: 20px;
-  display: flex;
-  overflow: auto;
-  scroll-snap-type: x mandatory;
-}
-
-.carousel__slide {
-  flex: 0 0 auto;
-  scroll-snap-align: center;
-}
-
-.carousel__slides.smooth-scroll {
-  scroll-behavior: smooth;
-}
-
-/* Hide scrollbar */
-.carousel__slides {
-  scrollbar-width: none; /* Firefox and latest Chromium */
-}
-
-.carousel__slides::-webkit-scrollbar {
-  display: none; /* Safari and legacy Chromium */
-}
-
-/* Styling relative to next section */
-.carousel {
-  padding-bottom: 10px;
-  position: relative;
-}
-
-/* Stylistic purpose */
 .carousel-wrapper {
   align-items: center;
   display: flex;
 }
 
 .carousel {
+  width: 100%;
+  height: min(100vw / 16 * 9, var(--max-carousel-height));
   margin: 0 auto;
+  padding-bottom: 10px;
+  position: relative;
 }
+
+#slide_container {
+  flex: 0 0 auto;
+  overflow: auto;
+  width: 100%;
+  z-index: -1;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+#slide_container img {
+  object-fit: cover;
+  object-position: 50% 30%;
+  max-height: var(--max-carousel-height);
+  display: block;
+  grid-column: 1;
+  grid-row: 1;
+  overflow: hidden;
+  width: 100%;
+  opacity: 0; /* Must be 0 to hide flashing images while loading in Firefox */
+  transition: opacity 1s;
+  z-index: -2;
+}
+
+#slide_container img.currentImage {
+  opacity: 1;
+  z-index: 0;
+}
+
+#slide_container img.fadeOut {
+  opacity:0;
+  z-index: 0;
+}
+
+#slide_container img.nextImage {
+  opacity: 1;
+  z-index: -1;
+}
+
+/* Zoom towards the correct vertical center for each image on wider screens */
+/* Class set by image name in carousel.js */
+#slide_container #imageNumber1  {object-position: 50% 0%}
+#slide_container #imageNumber2  {object-position: 50% 10%}
+#slide_container #imageNumber3  {object-position: 50% 60%}
+#slide_container #imageNumber4  {object-position: 50% 45%}
+#slide_container #imageNumber5  {object-position: 50% 50%}
+#slide_container #imageNumber6  {object-position: 50% 30%}
+#slide_container #imageNumber7  {object-position: 50% 0%}
+#slide_container #imageNumber8  {object-position: 50% 30%}
+#slide_container #imageNumber9  {object-position: 50% 25%}
+#slide_container #imageNumber10 {object-position: 50% 30%}
+#slide_container #imageNumber11 {object-position: 50% 40%}
+#slide_container #imageNumber12 {object-position: 50% 75%}

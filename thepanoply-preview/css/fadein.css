@@ -1,0 +1,17 @@
+.fade-in-divider {
+  opacity: 0;
+  transform: translateY(25vh);
+  will-change: opacity, transform;
+}
+
+.fade-in-header {
+  opacity: 0;
+  transform: translateY(-18vh);
+  will-change: opacity, transform;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(25vh);
+  will-change: opacity, transform;
+}

@@ -45,31 +45,38 @@
   }
 }
 
-div.parallax-image-socnet {
-  margin-top: -5vh;
-  
+
+div.parallax-image-contact {
+  margin-top: 0vh;
+  background-position: 50% 40%;
   .lazy {
     background-image: none;
     background-color: var(--main-complementary-color);
   }
 }
 
-div.parallax-image-contact {
-  margin-top: -5vh;
-  background-position: center bottom;
-}
-
-div.parallax-image-contact.lazy {
-  background-image: none;
-  background-color: var(--main-complementary-color);
+div.parallax-image-socnet {
+  margin-top: 0vh;
+  background-position: 50% 30%;
+  .lazy {
+    background-image: none;
+    background-color: var(--main-complementary-color);
+  }
 }
 
 div.parallax-image-gigs {
-  margin-top: -5vh;
-  background-position: center bottom;
-
+  margin-top: 0vh;
+  background-position: 50% 40%;
   .lazy {
     background-image: none;
     background-color: var(--main-complementary-color);
   }
+}
+
+/* DIVIDERS-> */
+/* https://codepen.io/Everybodyknows/pen/abbyLOZ */
+.fixed {
+  width: 100%;
+  height: var(--divider-height);
+  background-size: cover;
 }

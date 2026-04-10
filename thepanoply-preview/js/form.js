@@ -79,8 +79,25 @@ const post = (event) => {
 }
 
 const reEnableForm = () => {
-	console.log('reenabling form');
 	const okBtn = document.getElementById("submit");
-	okBtn.classList = "btn enabled";
-	okBtn.disabled = false;
+	if(okBtn.disabled) {
+	
+		console.log('reenabling form');
+		okBtn.classList = "btn enabled";
+		okBtn.disabled = false;
+		okBtn.value = "Skicka";
+		
+		const toast = document.getElementById("sentStatus");
+		toast.style.visibility = "hidden";
+	}
 }
+
+// -------------------- //
+// This is run on load 	//
+// -------------------- //
+
+window.addEventListener('load', ()=>{
+	const date = document.getElementById("date");
+	date.min = new Date().toLocaleDateString()
+})
+

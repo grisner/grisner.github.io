@@ -1,0 +1,48 @@
+.introtext {
+  text-align: left;
+  width: 90%;
+  max-width: var(--max-width);
+  display: inline-table;
+}
+
+/* SocnetIcons */
+
+#SocnetIcons {
+  padding: 5px 5px 0px 5px;
+  z-index: 2;
+}
+
+a img {
+  display: inline;
+  margin: auto;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  padding: 5px;
+}
+
+.socneticons {
+  display: flex;
+  padding-left: calc(40vw - 100px);
+  padding-right: calc(40vw - 100px);
+  margin: auto;
+  justify-content: space-around;
+}
+
+.socneticon {
+  text-align: center;
+  align-content: center;
+  display: inline-block;
+  margin: auto;
+}
+
+#SocnetIcons {
+  margin: auto;
+  align-content: center;
+  img {
+    height: 38px;
+  }
+  padding-bottom: 30px; /* safari doesn't seem to support padding-only */
+  padding: 5px 5px 30px 5px;
+  z-index: 2;
+}

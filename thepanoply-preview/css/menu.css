@@ -34,6 +34,7 @@ nav {
   padding-left: 0px;
   margin: auto;
   justify-content: space-evenly;
+  height: var(--menu-height);
 }
 
 nav > div {
@@ -71,7 +72,6 @@ nav > div > a {
   background-color: transparent;
   margin: 0px 10px;
   text-decoration: none;
-  line-height: 20px;
   display: inline-block;
 }
 
