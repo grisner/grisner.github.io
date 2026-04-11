@@ -6,6 +6,10 @@ form {
   display:grid;
 }
 
+form > p {
+  text-align: left;
+}
+
 .inputtext {
   border-width: 3px;
   font-size: 20px;
