@@ -2,6 +2,7 @@ table {
   width: 90%;
   max-width: var(--max-width);
   margin: auto;
+  margin-bottom: 50px;
   border-collapse: collapse;
 }
 
@@ -16,6 +17,19 @@ tr {
 
 .secondTr {
   background-color: var(--secondary-color);
+}
+
+td:nth-child(1) {
+  width: 40%;
+}
+
+td:nth-child(2) {
+  width: 40%;
+}
+
+td:nth-child(3) {
+  width: 20%;
+  white-space: nowrap;
 }
 
 #paginateButton {

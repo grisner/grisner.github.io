@@ -10,6 +10,18 @@ h2 {
   font-family: "PottaOne";
 }
 
+h3 {
+  font-family: "PottaOne";
+  font-weight: 700;
+  color: black;
+  margin: 0px;
+  text-align: left;
+  width: 90%;
+  max-width: var(--max-width);
+  display: inline-table;
+  font-size: 2rem;
+}
+
 .section-header {
   margin-left: auto;
   margin-right: auto;
@@ -33,6 +45,9 @@ h2 {
 
 @media (max-width: 400px) {
   .header-text {
+    font-size: 1rem;
+  }
+  .split {
     font-size: 1rem;
   }
 }
