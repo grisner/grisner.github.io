@@ -25,16 +25,16 @@
 
 @font-face {
   font-family: "PottaOne";
-  src: url("/thepanoply-preview/fonts/pottaone-regular.woff2");
+  /* src: url("/thepanoply-preview/fonts/pottaone-regular.woff2"); */
   /* line above used for preview deployment, line below used for prod deployment  */
-  /* src: url("/fonts/pottaone-regular.woff2"); */
+  src: url("/fonts/pottaone-regular.woff2");
 }
 
 @font-face {
   font-family: "Rambla";
-  src: url("/thepanoply-preview/fonts/rambla-regular.ttf");
+  /* src: url("/thepanoply-preview/fonts/rambla-regular.ttf"); */
   /* line above used for preview deployment, line below used for prod deployment  */
-  /* src: url("/fonts/rambla-regular.ttf"); */
+  src: url("/fonts/rambla-regular.ttf");
 }
 
 *,
@@ -63,6 +63,28 @@ div.section {
   min-height: 0;
   z-index: 1;
   text-align: center;
+}
+
+a.cta:link, a.cta:visited {
+  border-radius: 25px;
+  background-color: var(--main-color);
+  color: white;
+  padding: 14px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "PottaOne";
+  font-size: 18px;
+}
+
+a.cta:hover, a.cta:active {
+  background-color: var(--secondary-color);
+}
+
+p.cta {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 15px;
 }
 
 div.section:last-child {

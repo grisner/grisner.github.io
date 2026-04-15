@@ -36,12 +36,9 @@
     <link href="css/fadein.css" rel="stylesheet" />
     <link href="css/parallax-images.css" rel="stylesheet" />
     <link href="css/contact.css" rel="stylesheet" />
-    <link href="css/socnet.css" rel="stylesheet" />
+    <link href="css/video.css" rel="stylesheet" />
     <link href="css/table.css" rel="stylesheet" />
-    <link href="css/form.css" rel="stylesheet" />
-    <link href="css/buttons.css" rel="stylesheet" />
 
-    <script src="js/form.js"></script>
     <script src="js/lazyloader.js"></script>
     <script src="js/googlesheet.js"></script>
     <script src="js/fadein.js"></script>
@@ -58,7 +55,7 @@
             om
           </a>
           <a id="SocnetLink" href="#videor">
-            videor
+            Showreel
           </a>
           <a id="GigLink" href="#spelningar">
             spelningar
@@ -95,16 +92,17 @@
     </noscript>
 
     <section id="IntroSection">
-    
-    <div class="row introtext">
-      <p><b>Hej där!</b> Vi är The Panoply Steelband - en grupp engagerade musiker som spelar oljefat runtom i Stockholm och resten av landet med utgångspunkt i Södertälje. Vår repertoar innehåller de flesta typer av musik - allt från hårdrock, till modern pop, till karibisk musik. Vi spelar både covers och egenkomponerad musik.</p>
-      <p>Vi spelar oljefat - ett instrument som ursprungligen kommer från Trinidad och Tobago. Instrumentet är tillverkat av gamla oljetunnor och består av olika stämmor. Ljudbilden är energisk och fartfylld, och påminner lite om en blandning av kyrkklockor och xylofoner. Vi underhåller på event, fester, konserter, festivaler, och liknande.</p>
-      <p>Vi erbjuder även prova på-workshops och musikquiz. Boka oss om du vill ha en unik upplevelse till ditt event!</p>
-      <p class="cta"><a class="btn" href="#boka">Boka oss</a></p>
-    </div>
-  
+    <section>
+      <div class="row introtext">
+        <p><b>Hej där!</b> Vi är The Panoply Steelband - en grupp engagerade musiker som spelar oljefat runtom i Stockholm och resten av landet med utgångspunkt i Södertälje. Vår repertoar innehåller de flesta typer av musik - allt från hårdrock, till modern pop, till karibisk musik. Vi spelar både covers och egenkomponerad musik.</p>
+        <p>Vi spelar oljefat - ett instrument som ursprungligen kommer från Trinidad och Tobago. Instrumentet är tillverkat av gamla oljetunnor och består av olika stämmor. Ljudbilden är energisk och fartfylld, och påminner lite om en blandning av kyrkklockor och xylofoner. Vi underhåller på event, fester, konserter, festivaler, och liknande.</p>
+        <p>Vi erbjuder även prova på-workshops och musikquiz. Boka oss om du vill ha en unik upplevelse till ditt event!</p>
+        <p class="cta"><a class="cta" href="#boka">Boka oss</a></p>
+      </div>
+    </section>
 
     <!-- Social network icons section -->
+    <section id="SocnetIcons">
     <div class="row socneticons">
       <a
         class="socneticon"
@@ -146,6 +144,7 @@
       </a>
     </div>
     </section>
+    </section>
   
     <!-- Contact divider -->
     <div id="boka"></div>
@@ -154,112 +153,82 @@
     </div>
 
     <div class="fade-in-header">
-    <div class="section-header">
-      <div class="header-text">
-        <h2>Boka oss</h2>
+      <div class="section-header">
+        <div class="header-text">
+          <h2>Boka oss</h2>
+        </div>
       </div>
-    </div>
     </div>
 
     <!-- Contact section -->
     <div class="fade-in-section">
-    <section id="ContactSection">
-      <form onsubmit="return post(event)" method="post">
-        <p>Kul att du vill boka oss! Fyll i formuläret så hör vi av oss!</p>
-
-        <div class="field">
-          <label for="mail" class="inputlabel">E-postadress:</label>
-          <input id="mail" type="email" class="inputtext" required aria-describedby="mail-error" aria-invalid="false" onchange="reEnableForm()" />
-          <span id="mail-error" class="error" aria-live="polite">Vänligen ange en korrekt mailadress</span>
-        </div>
-  
-        <div class="field">
-          <label for="telno" class="inputlabel">Telefonnummer:</label>
-          <input type="tel" pattern="+?\d*" id="telno" class="inputtext" required aria-describedby="telno-error" aria-invalid="false" onchange="reEnableForm()" />
-          <span id="telno-error" class="error" aria-live="polite">Vänligen ange ett korrekt telefonnummer</span>
-        </div>
-    
-        <div class="field">
-          <label for="place" class="inputlabel">Var ska vi spela?</label>
-          <input type="text" id="place" class="inputtext" required aria-describedby="place-error" aria-invalid="false" onchange="reEnableForm()" />
-          <span id="place-error" class="error" aria-live="polite">Vänligen ange en korrekt plats</span>
-        </div>
-    
-        <div class="field">
-        <label for="date" class="inputlabel">När ska vi spela?</label>
-        <input type="date" id="date" class="inputtext" required aria-describedby="date-error" aria-invalid="false" onchange="reEnableForm()" />
-        <span id="date-error" class="error" aria-live="polite">Vänligen ange ett rimligt datum</span>
-      </div>
-  
-      <input type="submit" id="submit" class="btn enabled" value="Skicka">
-      <span id="sentStatus" class="toaster" >Tack för din förfrågan! Vi hör av oss inom några dagar.</span>
-    
-      </form>
-    </section>
+      <section id="ContactSection">
+        <iframe
+          loading="lazy"
+          id="GoogleForm"
+          src="https://docs.google.com/forms/d/1NtQk-lAuL8Eh4UjLNLOfAnxoT9NpVxz24FW_iUCtreg/viewform?embedded=true"
+        >
+        </iframe>
+      </section>
     </div>
 
     <!-- Media section divider -->
-    <div id="videor"></div>
+    <div id="video"></div>
     <div class="fade-in-divider">
-      <div class="parallax-image-socnet fixed lazy"></div>
+      <div class="parallax-image-video fixed lazy"></div>
     </div>
 
     <div class="fade-in-header">
-    <div class="section-header">
-      <div class="header-text">
-        <h2>Våra videor</h2>
+      <div class="section-header">
+        <div class="header-text">
+          <h2>Showreel</h2>
+        </div>
       </div>
-    </div>
     </div>
 
     <!-- Media section -->
     <div class="fade-in-section">
-    <section id="VideoSection">
-      <div id="Youtube-Root" class="socnet">
-        <iframe
-          loading="lazy"
-          id="YoutubeIframe"
-          class="socnetiframe"
-          src="https://www.youtube.com/embed/?listType=user_uploads&amp;list=thepanoplysteelband"
-        >
-        </iframe>
-      </div>
-    </section>
+      <section id="VideoSection">
+          <video width="80%" controls>
+            <source src="https://ucdde8aa72d7827ddca7408eca99.dl.dropboxusercontent.com/cd/0/inline/C-pPsKAGgFjCSl-5T8Gyuz51fR-6STQ8WuqCollhVyFii_KcBhRq5Q9CgCmWqA6zt3f-M5RZnTm33buIBOL-ZJfuHIvhOnCx2hqOAVcRnrzBYEuxgCjkFY4Ru4-TfOU47Qo/file#" type="video/mp4" />
+          </video> 
+      </section>
     </div>
 
     <!-- Media section divider -->
     <div id="spelningar"></div>
     <div class="fade-in-divider">
-    <div class="parallax-image-gigs fixed lazy"></div>
+      <div class="parallax-image-gigs fixed lazy"></div>
     </div>
 
     <div class="fade-in-header">
-    <div class="section-header">
-      <div class="header-text">
-        <h2>Spelningar</h2>
+      <div class="section-header">
+        <div class="header-text">
+          <h2>Spelningar</h2>
+        </div>
       </div>
-    </div>
     </div>
 
     <div class="fade-in-section">
+
     <section id="DoneGigSection">
       <h3 class="split">Kommande</h3>
       <table class="split" id="upcoming-gigs"></table>
       <h3 class="split">Tidigare</h3>
       <table id="done-gigs"></table>
 
-      <input
-        id="paginateButton"
-        type="button"
-        value="visa fler"
-        onclick="paginateNext()"
-      />
+        <input
+          id="paginateButton"
+          type="button"
+          value="visa fler"
+          onclick="paginateNext()"
+        />
 
-      <noscript
-        >Om du hade haft javascript aktivt hade du sett en lista på alla
-        spännande gigs vi gjort här</noscript
-      >
-    </section>
+        <noscript
+          >Om du hade haft javascript aktivt hade du sett en lista på alla
+          spännande gigs vi gjort här</noscript
+        >
+      </section>
     </div>
 
     <!-- Photographers section -->

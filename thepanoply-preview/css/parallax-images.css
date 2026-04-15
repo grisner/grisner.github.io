@@ -1,5 +1,5 @@
 @media (max-width: 900px) {
-  div.parallax-image-socnet {
+  div.parallax-image-video {
     
     background-image: url("../images/dividers/socnetdivider.small.jpg");
     @supports (grid-template-columns: subgrid) {
@@ -23,7 +23,7 @@
 }
 
 @media (min-width: 901px) {
-  div.parallax-image-socnet {
+  div.parallax-image-video {
     background-image: url("../images/dividers/socnetdivider.jpg");
     @supports (grid-template-columns: subgrid) {
       background-image: url("../images/dividers/socnetdivider.webp");
@@ -55,7 +55,7 @@ div.parallax-image-contact {
   }
 }
 
-div.parallax-image-socnet {
+div.parallax-image-video {
   margin-top: 0vh;
   background-position: 50% 30%;
   .lazy {

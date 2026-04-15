@@ -6,10 +6,6 @@ table {
   border-collapse: collapse;
 }
 
-#DoneGigSection {
-  flex-flow: column;
-}
-
 tr {
   height: 3rem;
   text-align: left;
