@@ -6,3 +6,8 @@
 #contact {
   text-align: center;
 }
+
+#ContactSection {
+  display: flex;
+  justify-content: center;
+}

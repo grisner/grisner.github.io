@@ -38,7 +38,10 @@
     <link href="css/contact.css" rel="stylesheet" />
     <link href="css/video.css" rel="stylesheet" />
     <link href="css/table.css" rel="stylesheet" />
+    <link href="css/form.css" rel="stylesheet" />
+    <link href="css/buttons.css" rel="stylesheet" />
 
+    <script src="js/form.js"></script>
     <script src="js/lazyloader.js"></script>
     <script src="js/googlesheet.js"></script>
     <script src="js/fadein.js"></script>
@@ -92,17 +95,16 @@
     </noscript>
 
     <section id="IntroSection">
-    <section>
-      <div class="row introtext">
-        <p><b>Hej där!</b> Vi är The Panoply Steelband - en grupp engagerade musiker som spelar oljefat runtom i Stockholm och resten av landet med utgångspunkt i Södertälje. Vår repertoar innehåller de flesta typer av musik - allt från hårdrock, till modern pop, till karibisk musik. Vi spelar både covers och egenkomponerad musik.</p>
-        <p>Vi spelar oljefat - ett instrument som ursprungligen kommer från Trinidad och Tobago. Instrumentet är tillverkat av gamla oljetunnor och består av olika stämmor. Ljudbilden är energisk och fartfylld, och påminner lite om en blandning av kyrkklockor och xylofoner. Vi underhåller på event, fester, konserter, festivaler, och liknande.</p>
-        <p>Vi erbjuder även prova på-workshops och musikquiz. Boka oss om du vill ha en unik upplevelse till ditt event!</p>
-        <p class="cta"><a class="cta" href="#boka">Boka oss</a></p>
-      </div>
-    </section>
+    
+    <div class="row introtext">
+      <p><b>Hej där!</b> Vi är The Panoply Steelband - en grupp engagerade musiker som spelar oljefat runtom i Stockholm och resten av landet med utgångspunkt i Södertälje. Vår repertoar innehåller de flesta typer av musik - allt från hårdrock, till modern pop, till karibisk musik. Vi spelar både covers och egenkomponerad musik.</p>
+      <p>Vi spelar oljefat - ett instrument som ursprungligen kommer från Trinidad och Tobago. Instrumentet är tillverkat av gamla oljetunnor och består av olika stämmor. Ljudbilden är energisk och fartfylld, och påminner lite om en blandning av kyrkklockor och xylofoner. Vi underhåller på event, fester, konserter, festivaler, och liknande.</p>
+      <p>Vi erbjuder även prova på-workshops och musikquiz. Boka oss om du vill ha en unik upplevelse till ditt event!</p>
+      <p class="cta"><a class="btn" href="#boka">Boka oss</a></p>
+    </div>
+  
 
     <!-- Social network icons section -->
-    <section id="SocnetIcons">
     <div class="row socneticons">
       <a
         class="socneticon"
@@ -144,7 +146,6 @@
       </a>
     </div>
     </section>
-    </section>
   
     <!-- Contact divider -->
     <div id="boka"></div>
@@ -162,14 +163,39 @@
 
     <!-- Contact section -->
     <div class="fade-in-section">
-      <section id="ContactSection">
-        <iframe
-          loading="lazy"
-          id="GoogleForm"
-          src="https://docs.google.com/forms/d/1NtQk-lAuL8Eh4UjLNLOfAnxoT9NpVxz24FW_iUCtreg/viewform?embedded=true"
-        >
-        </iframe>
-      </section>
+    <section id="ContactSection">
+      <form onsubmit="return post(event)" method="post">
+        <p>Kul att du vill boka oss! Fyll i formuläret så hör vi av oss!</p>
+
+        <div class="field">
+          <label for="mail" class="inputlabel">E-postadress:</label>
+          <input id="mail" type="email" class="inputtext" required aria-describedby="mail-error" aria-invalid="false" onchange="reEnableForm()" />
+          <span id="mail-error" class="error" aria-live="polite">Vänligen ange en korrekt mailadress</span>
+        </div>
+  
+        <div class="field">
+          <label for="telno" class="inputlabel">Telefonnummer:</label>
+          <input type="tel" pattern="+?\d*" id="telno" class="inputtext" required aria-describedby="telno-error" aria-invalid="false" onchange="reEnableForm()" />
+          <span id="telno-error" class="error" aria-live="polite">Vänligen ange ett korrekt telefonnummer</span>
+        </div>
+    
+        <div class="field">
+          <label for="place" class="inputlabel">Var ska vi spela?</label>
+          <input type="text" id="place" class="inputtext" required aria-describedby="place-error" aria-invalid="false" onchange="reEnableForm()" />
+          <span id="place-error" class="error" aria-live="polite">Vänligen ange en korrekt plats</span>
+        </div>
+    
+        <div class="field">
+        <label for="date" class="inputlabel">När ska vi spela?</label>
+        <input type="date" id="date" class="inputtext" required aria-describedby="date-error" aria-invalid="false" onchange="reEnableForm()" />
+        <span id="date-error" class="error" aria-live="polite">Vänligen ange ett rimligt datum</span>
+      </div>
+  
+      <input type="submit" id="submit" class="btn enabled" value="Skicka">
+      <span id="sentStatus" class="toaster" >Tack för din förfrågan! Vi hör av oss inom några dagar.</span>
+    
+      </form>
+    </section>
     </div>
 
     <!-- Media section divider -->

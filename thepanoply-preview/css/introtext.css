@@ -46,3 +46,8 @@ a img {
   padding: 5px 5px 30px 5px;
   z-index: 2;
 }
+
+.cta {
+  text-align: center;
+  margin-top: 32px;
+}
