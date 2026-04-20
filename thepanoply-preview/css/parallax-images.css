@@ -15,9 +15,9 @@
   }
 
   div.parallax-image-gigs {
-    background-image: url("../images/dividers/piratfest.small.jpg");
+    background-image: url("../images/dividers/gigdivider.small.jpg");
     @supports (grid-template-columns: subgrid) {
-      background-image: url("../images/dividers/piratfest.small.webp");
+      background-image: url("../images/dividers/gigdivider.small.webp");
     }
   }
 }
@@ -38,9 +38,9 @@
   }
 
   div.parallax-image-gigs {
-    background-image: url("../images/dividers/piratfest.jpg");
+    background-image: url("../images/dividers/gigdivider.jpg");
     @supports (grid-template-columns: subgrid) {
-      background-image: url("../images/dividers/piratfest.webp");
+      background-image: url("../images/dividers/gigdivider.webp");
     }
   }
 }
@@ -66,7 +66,7 @@ div.parallax-image-video {
 
 div.parallax-image-gigs {
   margin-top: 0vh;
-  background-position: 50% 40%;
+  background-position: 50% 55%;
   .lazy {
     background-image: none;
     background-color: var(--main-complementary-color);

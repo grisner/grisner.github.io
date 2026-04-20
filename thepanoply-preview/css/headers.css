@@ -43,6 +43,13 @@ h3 {
   background: var(--main-color);
 }
 
+h3.follow-us {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
 @media (max-width: 400px) {
   .header-text {
     font-size: 1rem;

@@ -45,6 +45,8 @@
     <script src="js/lazyloader.js"></script>
     <script src="js/googlesheet.js"></script>
     <script src="js/fadein.js"></script>
+    <script src="js/video.js"></script>
+
   </head>
   <body>
     <!-- Page header -->
@@ -55,7 +57,6 @@
       <nav id="Nav">
         <div class="nav-left">
           <a id="AboutLink" href="#om"> om </a>
-          <a id="showreelLink" href="#video"> Showreel </a>
           <a id="GigLink" href="#spelningar"> spelningar </a>
         </div>
         <div class="nav-right">
@@ -109,47 +110,57 @@
         <p class="cta"><a class="btn" href="#boka">Boka oss</a></p>
       </div>
 
-      <!-- Social network icons section -->
-      <div class="row socneticons">
-        <a
-          class="socneticon"
-          href="https://soundcloud.com/the-panoply-steelband"
-          target="_top"
-        >
-          <img src="images/loggor/soundcloud.png" alt="soundcloud" />
-        </a>
-        <a
-          class="socneticon"
-          href="https://www.youtube.com/user/thepanoplysteelband"
-          target="_top"
-        >
-          <img src="images/loggor/youtube.png" alt="youtube" />
-        </a>
-        <a
-          class="socneticon"
-          href="https://www.facebook.com/thepanoplysteelband"
-          target="_top"
-        >
-          <img src="images/loggor/facebook.png" alt="facebook" />
-        </a>
-        <a
-          class="socneticon"
-          href="https://instagram.com/thepanoplysteelband/"
-          target="_top"
-        >
-          <img src="images/loggor/instagram.png" alt="instagram" />
-        </a>
-        <a
-          class="socneticon"
-          href="mailto:thepanoplysteelband@gmail.com"
-          target="_top"
-        >
-          <img
-            src="images/loggor/email.png"
-            alt="thepanoplysteelband@gmail.com"
-          />
-        </a>
-      </div>
+    <!-- Social network icons section -->
+    <hr>
+    <h3 class="follow-us">Följ oss</h3>
+    <div class="socneticons">
+      <a
+        class="socneticon"
+        href="https://soundcloud.com/the-panoply-steelband"
+        target="_top"
+      >
+        <img class="img-with-text" src="images/loggor/soundcloud.png" alt="SoundCloud" />
+        <p class="img-with-text">SoundCloud</p>
+      </a>
+      <a
+        class="socneticon"
+        href="https://www.youtube.com/user/thepanoplysteelband"
+        target="_top"
+      >
+        <img class="img-with-text" src="images/loggor/youtube.png" alt="YouTube" />
+        <p class="img-with-text">YouTube</p>
+      </a>
+      <a
+        class="socneticon"
+        href="https://www.facebook.com/thepanoplysteelband"
+        target="_top"
+      >
+        <img class="img-with-text" src="images/loggor/facebook.png" alt="Facebook" />
+        <p class="img-with-text">Facebook</p>
+      </a>
+      <a
+        class="socneticon"
+        href="https://instagram.com/thepanoplysteelband/"
+        target="_top"
+      >
+        <img class="img-with-text" src="images/loggor/instagram.png" alt="Instagram" />
+        <p class="img-with-text">Instagram</p>
+      </a>
+      <a
+        class="socneticon"
+        href="mailto:thepanoplysteelband@gmail.com"
+        target="_top"
+      >
+        <img class="img-with-text" src="images/loggor/email.png" alt="thepanoplysteelband@gmail.com"/>
+        <p class="img-with-text">E-post</p>
+      </a>
+    </div>
+    <video width="80%" controls poster="./images/showreel_thumbnail.jpg" id="video">
+      <source
+        src="https://www.dropbox.com/scl/fi/evqbbtij7f56c024sy3xj/The-panoply-intro-V3.mp4?rlkey=usvag5zb79kjoeiaq1yng28w6&st=e945v2d8&raw=1"
+        type="video/mp4"
+      />
+    </video>
     </section>
 
     <!-- Contact divider -->
@@ -245,36 +256,7 @@
       </section>
     </div>
 
-    <!-- Media section divider -->
-    <div id="video"></div>
-    <div class="fade-in-divider">
-      <div class="parallax-image-video fixed lazy"></div>
-    </div>
-
-    <div class="fade-in-header">
-      <div class="section-header">
-        <div class="header-text">
-          <h2>Showreel</h2>
-        </div>
-      </div>
-    </div>
-
-    <!-- Media section -->
-    <div class="fade-in-section">
-      <section id="showreel">
-        <video width="80%" controls poster="./images/showreel_thumbnail.jpg">
-          <source
-            src="https://www.dropbox.com/scl/fi/evqbbtij7f56c024sy3xj/The-panoply-intro-V3.mp4?rlkey=usvag5zb79kjoeiaq1yng28w6&st=e945v2d8&raw=1"
-            type="video/mp4"
-          />
-        </video>
-      </section>
-    </div>
-
-    <!--https://www.dropbox.com/scl/fi/evqbbtij7f56c024sy3xj/The-panoply-intro-V3.mp4?rlkey=usvag5zb79kjoeiaq1yng28w6&st=e945v2d8&raw=1
-    https://www.dropbox.com/scl/fi/3nph5wiku6ex3by4uqv4u/tetradotoxin.jpg?rlkey=5as65rlpglo2zm1wpex8agliu&st=xo3ovwrd&raw=1-->
-
-    <!-- Media section divider -->
+    <!-- Gig section divider -->
     <div id="spelningar"></div>
     <div class="fade-in-divider">
       <div class="parallax-image-gigs fixed lazy"></div>
@@ -295,12 +277,7 @@
         <h3 class="split">Tidigare</h3>
         <table id="done-gigs"></table>
 
-        <input
-          id="paginateButton"
-          type="button"
-          value="visa fler"
-          onclick="paginateNext()"
-        />
+      <input id="paginateButton" type="submit" class="btn enabled" value="Visa fler" onclick="paginateNext()"/>
 
         <noscript
           >Om du hade haft javascript aktivt hade du sett en lista på alla

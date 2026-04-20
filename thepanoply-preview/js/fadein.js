@@ -16,9 +16,9 @@ function initScrollFadeSections() {
     };
 
     function updateDivider(el) {
-      let progress = Math.sqrt(getProgress(el, 0.5));
+      let progress = Math.sqrt(getProgress(el, 0.05));
       el.style.opacity = progress;
-      el.style.transform = `translateY(${25 * (1 - progress)}vh)`;
+      el.style.transform = `translateY(${10 * (1 - progress)}vh)`;
     };
 
     function updateHeader(el) {

@@ -5,28 +5,56 @@
   display: inline-table;
 }
 
-/* SocnetIcons */
+@media (min-width: 901px) {
+  .introtext {
+    font-size: larger;
+  }
+  .socneticons {
+    font-size: 1rem;
+  }
+}
 
-#SocnetIcons {
-  padding: 5px 5px 0px 5px;
-  z-index: 2;
+@media (max-width: 900px) {
+  .socneticons {
+    font-size: 0.8rem;
+  }
+}
+
+hr {
+  width: 80%;
+  max-width: var(--max-width);
+  margin: 10px auto;
+  height: 1px;
+  color: lightgray;
+  background-color: lightgray;
+  border: none;
 }
 
 a img {
   display: inline;
   margin: auto;
-  width: 38px;
-  height: 38px;
+  width: 32px;
+  height: 32px;
   border: 0;
-  padding: 5px;
+  padding: 0px;
 }
 
 .socneticons {
   display: flex;
-  padding-left: calc(40vw - 100px);
-  padding-right: calc(40vw - 100px);
+  padding-left: calc(
+    var(--side-space) + (var(--content-width) - min(var(--content-width), 450px)) / 2
+  );
+  padding-right: calc(
+    var(--side-space) + (var(--content-width) - min(var(--content-width), 450px)) / 2
+  );
   margin: auto;
   justify-content: space-around;
+  padding-bottom: 10px;
+}
+
+.socneticons a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .socneticon {
@@ -34,17 +62,22 @@ a img {
   align-content: center;
   display: inline-block;
   margin: auto;
+  flex: 1 1 0px;
 }
 
-#SocnetIcons {
-  margin: auto;
-  align-content: center;
-  img {
-    height: 38px;
-  }
-  padding-bottom: 30px; /* safari doesn't seem to support padding-only */
-  padding: 5px 5px 30px 5px;
-  z-index: 2;
+.img-with-text {
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: "Rambla";
+  color: black;
+  padding: 0;
+  margin: 5px;
+}
+
+.img-with-text img {
+  display: block;
+  margin: 0;
 }
 
 .cta {

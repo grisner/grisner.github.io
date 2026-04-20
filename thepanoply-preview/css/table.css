@@ -2,7 +2,7 @@ table {
   width: 90%;
   max-width: var(--max-width);
   margin: auto;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   border-collapse: collapse;
 }
 
@@ -30,10 +30,4 @@ td:nth-child(2) {
 td:nth-child(3) {
   width: 20%;
   white-space: nowrap;
-}
-
-#paginateButton {
-  border: 0px;
-  background-color: white;
-  text-decoration: underline;
 }

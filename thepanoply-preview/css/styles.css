@@ -21,6 +21,8 @@
   --header-height: 1vh;
   --padding-bottom: 10px;
   --min-section-height: calc(100vh - var(--menu-height) - var(--divider-height));
+  --side-space: calc((100vw - min(var(--max-width), 100vw)) / 2);
+  --content-width: min(var(--max-width), 100vw);
 }
 
 @font-face {
@@ -81,7 +83,7 @@ footer {
   background-color: white;
 
   p {
-    margin-top: 0;
+    margin-top: 40px;
   }
 }
 
