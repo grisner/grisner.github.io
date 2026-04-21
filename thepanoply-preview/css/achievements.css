@@ -6,16 +6,23 @@
   justify-content:center;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 1rem;
   text-align: left;
   color: white;
   font-family: 'Rambla';
-  line-height: 32px;
-  padding-top: 8px;
-  padding-bottom: 8px; 
+  line-height: 2rem;
+  padding-top: 1vh;
+  padding-bottom: 1vh; 
+}
+
+@media (min-width: 901px) {
+  #achievements > ul {
+    font-size: larger;
+  }
 }
 
 #achievements > ul {
-  padding-left: 6px;
+  padding-left: 1vw;
   list-style-position: inside;
 }
 
