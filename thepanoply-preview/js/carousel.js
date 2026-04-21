@@ -14,6 +14,21 @@ const imageNames = [
   "12",
 ];
 
+const altValues = [
+  "The Panoply repeterar i lantlig trädgård",
+  "The Panoply spelar för kvarteret i Södertälje i samband med födelsedagsfest",
+  "The Panoply underhåller på Gekås Sommarscen 2025 i Ullared",
+  "The Panoply spelar på kvällen under Eksjö Stadsfest 2023",
+  "The Panoply på scen under Caribbean Ting 2024 i Malmö Folkets Park",
+  "The Panoply spelar på kvällen under Eksjö Stadsfest 2023",
+  "The Panoply förbereder för spelning i Södertälje centrum",
+  "The Panoply levererar underhållning för deltagarna i löpeventet Tjejmilen",
+  "The Panoply deltar i Järna Kulturfest 2024",
+  "The Panoply ställer upp med medley i Talang 2020",
+  "The Panoply på scen inför spelning med Isak Sundström och Victoria Verseau på Uppsala Slotts konstmuseum 2022",
+  "The Panoply spelar ambient inom Lumen Project med Isak Sundström och Victoria Verseau i Eric Ericssonhallen 2022"
+]
+
 // Check webp support and fallback to jpeg in old browsers
 function checkWebPSupport() {                                                                                                                                                                   
   const canvas = document.createElement("canvas");
@@ -41,7 +56,7 @@ images.forEach((url, id) => {
     img.setAttribute("class", "currentImage");
   };
   img.setAttribute("role", "group");
-  img.setAttribute("alt", imageNames[id]);
+  img.setAttribute("alt", altValues[id]);
   img.setAttribute("aria-label", `${id} of ${images.length}`);
   img.setAttribute("aria-roledescription", "slide");
   img.setAttribute("src", url);

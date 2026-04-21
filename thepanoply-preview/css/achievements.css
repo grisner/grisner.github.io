@@ -1,0 +1,19 @@
+#achievements {
+  display: block;
+  background-color: var(--main-color);
+  width: 90%;
+  max-width: 900px;
+  justify-content:center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  color: white;
+  font-family: 'Rambla';
+  line-height: 32px;
+  padding-top: 8px;
+  padding-bottom: 8px; 
+}
+
+#achievements > b {
+  font-weight: 900;
+}
