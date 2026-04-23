@@ -23,7 +23,8 @@
 
 #achievements > ul {
   padding-left: 1vw;
-  list-style-position: inside;
+  list-style-position: initial;
+  text-align: center;
 }
 
 #achievements > b {
