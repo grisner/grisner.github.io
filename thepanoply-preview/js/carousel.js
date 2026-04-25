@@ -22,7 +22,7 @@ const altValues = [
   "The Panoply på scen under Caribbean Ting 2024 i Malmö Folkets Park",
   "The Panoply spelar på kvällen under Eksjö Stadsfest 2023",
   "The Panoply förbereder för spelning i Södertälje centrum",
-  "The Panoply levererar underhållning för deltagarna i löpeventet Tjejmilen",
+  "The Panoply levererar underhållning för deltagarna i löpeventet Vårruset",
   "The Panoply deltar i Järna Kulturfest 2024",
   "The Panoply ställer upp med medley i Talang 2020",
   "The Panoply på scen inför spelning med Isak Sundström och Victoria Verseau på Uppsala Slotts konstmuseum 2022",

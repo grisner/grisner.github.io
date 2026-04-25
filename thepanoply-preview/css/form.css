@@ -10,6 +10,10 @@ form > p {
   text-align: left;
 }
 
+form > p.bp {
+  justify-self: center;
+}
+
 .inputtext {
   border-width: 3px;
   font-size: 20px;

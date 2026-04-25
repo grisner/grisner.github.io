@@ -1,0 +1,36 @@
+User-agent: *
+Allow: /
+
+# Block known AI crawlers
+User-agent: CCBot
+Disallow: /
+User-agent: GPTBot
+Disallow: /
+User-agent: Google-Extended
+Disallow: /
+User-agent: anthropic-ai
+Disallow: /
+User-agent: cohere-ai
+Disallow: /
+User-agent: FacebookBot
+Disallow: /
+User-agent: omgili
+Disallow: /
+User-agent: omgilibot
+Disallow: /
+User-agent: Applebot-Extended
+Disallow: /
+User-agent: AwarioRobot
+Disallow: /
+User-agent: Diffbot
+Disallow: /
+User-agent: magicsearchbot
+Disallow: /
+User-agent: Bytespider
+Disallow: /
+User-agent: YouBot
+Disallow: /
+User-agent: PerplexityBot
+Disallow: /
+
+Sitemap: https://thepanoply.se/sitemap.xml

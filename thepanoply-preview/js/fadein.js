@@ -17,6 +17,7 @@ function initScrollFadeSections() {
 
     function updateDivider(el) {
       let progress = Math.sqrt(getProgress(el, 0.05));
+      progress = progress > 0.98 ? 1 : progress;
       el.style.opacity = progress;
       el.style.transform = `translateY(${10 * (1 - progress)}vh)`;
     };

@@ -6,7 +6,7 @@ Eftersom vi är en grupp människor har vi valt att placera koden här för att 
 # Karusell-bilderna
 
 ## Konfigurering
-Det finns en lista över bilder i `js/carousel.js` som behöver uppdateras om bilder läggs till i `images/`. Motsvarande ID behöver också läggas till i `css/carousel.js` (t.ex. `#slide_container #imageNumber1` för bild `images/1.*`) med en procent-angivelse som motsvarar bildens vertikala centrum, så att skalningen blir korrekt i breda fönster.
+Det finns en lista över bilder i `js/carousel.js` som behöver uppdateras om bilder läggs till i `images/`. Motsvarande ID behöver också läggas till i `css/carousel.css` (t.ex. `#slide_container #imageNumber1` för bild `images/1.*`) med en procent-angivelse som motsvarar bildens vertikala centrum, så att skalningen blir korrekt i breda fönster.
 
 Exempel:
 - `object-position: 50% 0%` förankrar bilden så att dess övre kant alltid syns.
