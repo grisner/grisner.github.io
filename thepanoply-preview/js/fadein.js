@@ -23,13 +23,13 @@ function initScrollFadeSections() {
     };
 
     function updateHeader(el) {
-      let progress = Math.sqrt(getProgress(el, 0.5));
+      let progress = Math.sqrt(getProgress(el, 0.55));
       el.style.opacity = progress > 0.1 ? progress : 0;
       el.style.transform = `translateY(${-15 * (1 - progress)}vh)`;
     };
 
     function updateSection(el) {
-      let progress = Math.sqrt(getProgress(el, 0.5));
+      let progress = Math.sqrt(getProgress(el, 0.55));
       el.style.opacity = progress;
       el.style.transform = `translateY(${25 * (1 - progress)}vh)`;
     };

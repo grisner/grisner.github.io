@@ -4,6 +4,7 @@ form {
   justify-self: center;
   font-size: 18px;
   display:grid;
+  margin-bottom: var(--vertical-margin);
 }
 
 form > p {
@@ -61,18 +62,20 @@ form > p.bp {
 
 #sentStatus {
   width: 100%;
-  visibility: hidden;
+  display: none;
 }
 
 .toaster {
   margin-top: 12px;
-  background-color: var(--main-color);
+  background: linear-gradient(90deg,rgba(230, 135, 28, 1) 0%, rgba(247, 148, 32, 1) 50%, rgba(252, 168, 71, 1) 100%);
+  border-radius: 15px;
   color: white;
   padding: 14px 50px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: none;
   font-family: "PottaOne";
   font-size: 18px;
   border-style: none;
+  margin-bottom: var(--vertical-margin);
 }

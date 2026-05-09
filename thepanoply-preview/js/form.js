@@ -73,7 +73,7 @@ const post = (event) => {
 	
 
 	const toast = document.getElementById("sentStatus");
-	toast.style.visibility = "Visible";
+	toast.style.display = "inline-block";
 
 	return false;
 }
@@ -88,7 +88,7 @@ const reEnableForm = () => {
 		okBtn.value = "Skicka";
 		
 		const toast = document.getElementById("sentStatus");
-		toast.style.visibility = "hidden";
+		toast.style.display = "none";
 	}
 }
 

@@ -1,16 +1,18 @@
 #achievements {
   display: block;
-  background-color: var(--main-color);
+  background: linear-gradient(90deg,rgba(230, 135, 28, 1) 0%, rgba(247, 148, 32, 1) 50%, rgba(252, 168, 71, 1) 100%);
+  border-radius: 15px;
   width: 90%;
   max-width: 900px;
   justify-content:center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1rem;
+  margin-top: var(--vertical-margin);
+  margin-bottom: var(--vertical-margin);
   text-align: left;
   color: white;
   font-family: 'Rambla';
-  line-height: 2rem;
+  line-height: 3rem;
   padding-top: 1vh;
   padding-bottom: 1vh; 
 }

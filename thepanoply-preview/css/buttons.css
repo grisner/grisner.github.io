@@ -11,6 +11,10 @@
   border-style: none;
 }
 
+p.cta > .btn  {
+  text-transform: uppercase;
+}
+
 .btn:hover, :disabled, :disabled {
   background-color: var(--secondary-color);
 }

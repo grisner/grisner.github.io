@@ -99,7 +99,7 @@ function populateUpcomingRow(tableRow, i) {
   if (i % 2 === 0) {
     tableRow.setAttribute("class", "secondTr");
   }
-  table.appendChild(tableRow);
+  table.insertBefore(tableRow, table.firstChild);
 }
 
 function hideSplit() {

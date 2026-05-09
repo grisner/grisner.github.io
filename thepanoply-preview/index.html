@@ -57,12 +57,14 @@
     </h1>
     <header id="Menu">
       <nav id="Nav">
-        <div class="nav-left">
+        <div>
           <a id="AboutLink" href="#om"> om </a>
+        </div>
+        <div>
           <a id="GigLink" href="#spelningar"> spelningar </a>
         </div>
-        <div class="nav-right">
-          <a class="cta_menu" id="ContactLink" href="#boka"> boka </a>
+        <div class="nav-cta">
+          <a class="cta_menu" id="ContactLink" href="#boka"> boka oss </a>
         </div>
       </nav>
     </header>
@@ -113,17 +115,7 @@
       </div>
 
     <!-- Social network icons section -->
-    <hr>
-    <h3 class="follow-us">Följ oss</h3>
     <div class="socneticons">
-      <a
-        class="socneticon"
-        href="https://soundcloud.com/the-panoply-steelband"
-        target="_top"
-      >
-        <img class="img-with-text" src="images/loggor/soundcloud.png" alt="SoundCloud" />
-        <p class="img-with-text">SoundCloud</p>
-      </a>
       <a
         class="socneticon"
         href="https://www.youtube.com/user/thepanoplysteelband"
@@ -156,7 +148,27 @@
         <img class="img-with-text" src="images/loggor/email.png" alt="thepanoplysteelband@gmail.com"/>
         <p class="img-with-text">E-post</p>
       </a>
+      <a
+        class="socneticon"
+        href="https://soundcloud.com/the-panoply-steelband"
+        target="_top"
+      >
+        <img class="img-with-text" src="images/loggor/soundcloud.png" alt="SoundCloud" />
+        <p class="img-with-text">SoundCloud</p>
+      </a>
     </div>
+
+    <div id="achievements">
+      <ul>
+        <li><b>Mer än 100 000 visningar på YouTube</b></li>
+        <li><b>Deltagare i Talang 2020</b></li>
+        <li><b>Vinnare av SM för Gatumusikanter 2019</b></li>
+        <li><b>3:e plats i Nyköping Street Music 2019 och 2018</b></li>
+      </ul>
+    </div>
+
+    <h3>Showreel</h3>
+    <div class="row introtext">Vill du ha ett smakprov på vad vi kan erbjuda? Kolla in våran Showreel, där vi har samlat lite klipp från olika event vi har spelat på!</div>
 
     <video width="80%" controls poster="./images/showreel_thumbnail.jpg" id="video">
       <source
@@ -165,13 +177,6 @@
       />
     </video>
 
-    <div id="achievements">
-      <ul>
-        <li><b>Deltagare i Talang 2020</b></li>
-        <li><b>Vinnare av SM i gatumusik 2019</b></li>
-        <li><b>3e plats i Nyköping Street Music 2019 och 2018</b></li>
-      </ul>
-    </div>
     </section>
 
     <!-- Contact divider -->
@@ -283,6 +288,7 @@
 
     <div class="fade-in-section">
       <section id="DoneGigSection">
+        <div class="row introtext">Är du nyfiken på vad vi har för spelningar planerade, eller var vi tidigare har spelat? Kolla in vår spelningskalender!</div>
         <h3 class="split">Kommande</h3>
         <table class="split" id="upcoming-gigs"></table>
         <h3 class="split">Tidigare</h3>
